@@ -1,0 +1,35 @@
+@use "./variables" as v;
+
+// $headings-font-family: "texgyreadventor", sans-serif;
+// $headings-font-weight: 600;
+
+$font-family-base: "Montserrat", sans-serif;
+$primary: v.$primary;
+$secondary: v.$secondary;
+$border-radius: 0rem;
+
+$btn-font-weight: 700;
+$headings-margin-bottom: 0;
+$paragraph-margin-bottom: 0;
+$body-color: #000000;
+$font-weight-base: 400;
+$link-decoration: none;
+$btn-line-height: normal;
+$headings-line-height: normal;
+
+// $btn-border-radius: 0;
+// $grid-gutter-width: 1.5rem;
+// $font-size-base: 1.6rem;
+// $headings-color: white;
+// $line-height-base: 1.75;
+// $font-size-base: 1.125rem;
+
+// $container-padding-x: 48px;
+
+// $container-max-widths: (
+//   sm: 540px,
+//   md: 720px,
+//   lg: 960px,
+//   xl: 1040px,
+//   xxl: 1290px,
+// );
