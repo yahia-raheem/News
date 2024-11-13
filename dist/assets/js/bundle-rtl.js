@@ -139,6 +139,48 @@ function _unsupportedIterableToArray(o, minLen) {
 
 /***/ }),
 
+/***/ "./src/js/components/animate.js":
+/*!**************************************!*\
+  !*** ./src/js/components/animate.js ***!
+  \**************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _helper_funcs_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./helper-funcs.js */ "./src/js/components/helper-funcs.js");
+
+document.addEventListener("DOMContentLoaded", function () {
+  (0,_helper_funcs_js__WEBPACK_IMPORTED_MODULE_0__.findAndDoForEach)(".animate.fade-in", _fadeIn);
+  (0,_helper_funcs_js__WEBPACK_IMPORTED_MODULE_0__.findAndDoForEach)(".animate.scale", _scaleWithScroll);
+});
+
+/**
+ * function to fade in object as soon as it enters the view port
+ * @param {HTMLBaseElement} el An element that you want to fade in
+ */
+var _fadeIn = function _fadeIn(el) {
+  (0,_helper_funcs_js__WEBPACK_IMPORTED_MODULE_0__.elementObserver)(function (options) {
+    options.element.classList.add("visible");
+  }, {
+    element: el
+  });
+};
+
+/**
+ * A function that scales images on zoom.
+ * The image scales up on scroll down to a maximum of 2.5 zoom and it scales down on scroll up to the min which is 1
+ * @param {HTMLBaseElement} el An element you want to scale on scroll
+ */
+var _scaleWithScroll = function _scaleWithScroll(el) {
+  window.addEventListener("scroll", function () {
+    var scrollPosition = window.scrollY;
+    var imageScale = Math.max(1, Math.min(1 + scrollPosition / 1000, 2.5));
+    console.log(imageScale);
+    el.style.transform = "scale(".concat(imageScale, ")");
+  });
+};
+
+/***/ }),
+
 /***/ "./src/js/components/helper-funcs.js":
 /*!*******************************************!*\
   !*** ./src/js/components/helper-funcs.js ***!
@@ -153,6 +195,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   destroyOldSlider: () => (/* binding */ destroyOldSlider),
 /* harmony export */   elementObserver: () => (/* binding */ elementObserver),
 /* harmony export */   eraseCookie: () => (/* binding */ eraseCookie),
+/* harmony export */   findAndDoForEach: () => (/* binding */ findAndDoForEach),
 /* harmony export */   getCookie: () => (/* binding */ getCookie),
 /* harmony export */   getLineHeight: () => (/* binding */ getLineHeight),
 /* harmony export */   getViewportSize: () => (/* binding */ getViewportSize),
@@ -547,29 +590,30 @@ var observeDOM = function () {
   };
 }();
 
-/***/ }),
-
-/***/ "./src/js/components/sections.js":
-/*!***************************************!*\
-  !*** ./src/js/components/sections.js ***!
-  \***************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _helper_funcs_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./helper-funcs.js */ "./src/js/components/helper-funcs.js");
-
-document.addEventListener("DOMContentLoaded", function () {
-  var fadeinSections = document.querySelectorAll("section.fade-in");
-  if (fadeinSections && fadeinSections.length > 0) {
-    fadeinSections.forEach(function (sec) {
-      (0,_helper_funcs_js__WEBPACK_IMPORTED_MODULE_0__.elementObserver)(function (options) {
-        options.element.classList.add("visible");
-      }, {
-        element: sec
-      });
+/**
+ * Finds elements matching the given CSS selector and applies a callback function to each.
+ *
+ * @param {string} target - The CSS selector to target elements.
+ * @param {function} callback - The callback function to be executed for each matched element.
+ *   The callback function receives the matched element as its argument.
+ *
+ * @example
+ * ```javascript
+ * findAndDoForEach('.my-button', (button) => {
+ *   button.addEventListener('click', () => {
+ *     console.log('Button clicked!');
+ *   });
+ * });
+ * ```
+ */
+var findAndDoForEach = function findAndDoForEach(target, callback) {
+  var targets = document.querySelectorAll(target);
+  if (targets && targets.length > 0) {
+    targets.forEach(function (one) {
+      callback(one);
     });
   }
-});
+};
 
 /***/ })
 
@@ -636,7 +680,7 @@ var __webpack_exports__ = {};
   !*** ./src/js/bundle-rtl.js ***!
   \******************************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _components_sections_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/sections.js */ "./src/js/components/sections.js");
+/* harmony import */ var _components_animate_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/animate.js */ "./src/js/components/animate.js");
 
 document.addEventListener("DOMContentLoaded", function () {});
 })();

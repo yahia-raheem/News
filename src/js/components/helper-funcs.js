@@ -405,3 +405,29 @@ export const observeDOM = (() => {
     }
   };
 })();
+
+/**
+ * Finds elements matching the given CSS selector and applies a callback function to each.
+ *
+ * @param {string} target - The CSS selector to target elements.
+ * @param {function} callback - The callback function to be executed for each matched element.
+ *   The callback function receives the matched element as its argument.
+ *
+ * @example
+ * ```javascript
+ * findAndDoForEach('.my-button', (button) => {
+ *   button.addEventListener('click', () => {
+ *     console.log('Button clicked!');
+ *   });
+ * });
+ * ```
+ */
+export const findAndDoForEach = (target, callback) => {
+  const targets = document.querySelectorAll(target);
+
+  if (targets && targets.length > 0) {
+    targets.forEach((one) => {
+      callback(one);
+    });
+  }
+};

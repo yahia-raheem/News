@@ -1,2 +1,2 @@
-import "./components/sections.js";
+import "./components/animate.js";
 document.addEventListener("DOMContentLoaded", () => {});
