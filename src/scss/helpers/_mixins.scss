@@ -6,6 +6,7 @@
 );
 @use "sass:meta";
 @use "queries" as *;
+@use "../base/variables" as v;
 
 @mixin arrow(
   $direction,
@@ -351,6 +352,34 @@
 
 @function rem($px) {
   @return math.div($px, 16) * 1rem;
+}
+
+
+@mixin decorativeTitle() {
+  position: relative;
+  background: v.$primary;
+  color: #353535;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    inset-inline-start: 0;
+    transform: translate(-50%, -50%) rotateZ(45deg);
+    width: 10px;
+    height: 10px;
+    background-color: #0abb93;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    inset-inline-end: 0;
+    transform: translate(50%, -50%) rotateZ(45deg);
+    width: 10px;
+    height: 10px;
+    background-color: #0abb93;
+  }
 }
 
 // @mixin paragraph {

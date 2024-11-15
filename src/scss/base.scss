@@ -33,4 +33,10 @@
 
 a {
   text-decoration: none !important;
+
+  &.btn {
+    line-height: 1;
+    padding: 1rem;
+  }
 }
+
