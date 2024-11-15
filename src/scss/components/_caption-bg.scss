@@ -1,0 +1,19 @@
+section.bg-caption-1 {
+    padding-top: h.rem(172);
+    padding-bottom: h.rem(454);
+
+    img.bg-image {
+        z-index: -1;
+    }
+
+    .quote-card {
+        p {
+            font-size: h.rem(24);
+            margin-bottom: h.rem(20);
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
