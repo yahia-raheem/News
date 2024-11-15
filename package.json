@@ -1,7 +1,7 @@
 {
-  "name": "sports_pro",
+  "name": "news",
   "version": "0.1.0",
-  "description": "Sports PRO Theme for Wordpress",
+  "description": "News",
   "exports": "./index.js",
   "scripts": {
     "start": "gulp",

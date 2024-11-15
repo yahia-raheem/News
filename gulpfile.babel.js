@@ -174,6 +174,7 @@ export const build = gulp.series(
   gulp.parallel(styles, copy),
   rtlStyles,
   postStyles,
-  compress
+  fileInclude,
+  // compress
 );
 export default dev;
