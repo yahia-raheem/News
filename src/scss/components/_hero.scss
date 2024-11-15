@@ -1,5 +1,5 @@
 section.hero {
-  height: 100vh;
+  height: 75vh;
 
   img.bg-image {
     z-index: -1;
@@ -11,13 +11,13 @@ section.hero {
 
   .card {
     padding-top: h.rem(53);
-    padding-bottom: h.rem(20);
-    padding-inline: h.rem(58);
+    padding-bottom: h.rem(16);
+    padding-inline: h.rem(30);
     max-width: h.rem(810);
     background-color: rgba(4, 30, 54, 0.8);
     backdrop-filter: blur(4px);
-    border-top-left-radius: 32px;
-    border-bottom-right-radius: 40px;
+    border-top-left-radius: 24px;
+    border-bottom-right-radius: 24px;
 
     .header {
       @include h.decorativeTitle();
@@ -26,41 +26,81 @@ section.hero {
       transform: translateY(-50%);
       padding: h.rem(13) h.rem(24) h.rem(0);
       font-weight: 700;
-      font-size: h.rem(28);
-      line-height: h.rem(33);
+      font-size: h.rem(18);
     }
 
     .suffix {
       span {
         font-weight: 500;
-        font-size: h.rem(24);
-        color: #BCBCBC;
+        font-size: h.rem(18);
+        color: #bcbcbc;
       }
     }
 
     .content {
-      margin-bottom: h.rem(24);
+      margin-bottom: h.rem(18);
 
       h4 {
         text-align: center;
-        font-size: h.rem(40);
+        font-size: h.rem(24);
       }
     }
   }
 
   footer {
-    margin-bottom: h.rem(32);
+    margin-bottom: h.rem(16);
 
     p {
       font-weight: 700;
-      font-size: h.rem(24);
-      line-height: h.rem(30);
+      font-size: h.rem(18);
       text-align: center;
-      margin-bottom: h.rem(30);
+      margin-bottom: h.rem(16);
     }
 
     a.btn {
       @include h.newsBtn();
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    height: 100vh;
+
+    .card {
+      padding-top: h.rem(53);
+      padding-bottom: h.rem(20);
+      padding-inline: h.rem(58);
+      border-top-left-radius: 32px;
+      border-bottom-right-radius: 40px;
+
+      .header {
+        padding: h.rem(13) h.rem(24) h.rem(0);
+        font-size: h.rem(28);
+        line-height: h.rem(33);
+      }
+
+      .suffix {
+        span {
+          font-size: h.rem(24);
+        }
+      }
+
+      .content {
+        margin-bottom: h.rem(24);
+
+        h4 {
+          font-size: h.rem(40);
+        }
+      }
+    }
+
+    footer {
+      margin-bottom: h.rem(32);
+
+      p {
+        font-size: h.rem(24);
+        line-height: h.rem(30);
+        margin-bottom: h.rem(30);
+      }
     }
   }
 }

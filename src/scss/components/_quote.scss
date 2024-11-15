@@ -12,14 +12,19 @@ section.quote {
   }
 
   .content-wrapper {
-    margin-top: h.rem(50);
+    margin-top: h.rem(35);
     display: flex;
-    gap: h.rem(54);
-    margin-bottom: h.rem(234);
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    gap: h.rem(25);
+    margin-bottom: h.rem(150);
+
+    .quote-container {
+      max-width: h.rem(747);
+    }
 
     .quote-card {
       position: relative;
-      top: h.rem(26);
 
       p:last-of-type {
         margin-bottom: 0;
@@ -30,6 +35,26 @@ section.quote {
   .decoration {
     bottom: 0;
     object-fit: cover;
-    max-height: 371px;
+    max-height: 150px;
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: 4rem 0;
+
+    .content-wrapper {
+      margin-top: h.rem(50);
+      gap: h.rem(54);
+      margin-bottom: h.rem(234);
+      flex-wrap: nowrap;
+
+      .quote-card {
+        top: h.rem(26);
+        min-width: h.rem(400);
+      }
+    }
+
+    .decoration {
+      max-height: 371px;
+    }
   }
 }

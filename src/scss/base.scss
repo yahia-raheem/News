@@ -44,9 +44,14 @@ a {
 }
 
 p.content {
-  font-size: h.rem(24);
+  font-size: h.rem(18);
   font-weight: 400;
-  margin-bottom: h.rem(20);
+  margin-bottom: h.rem(12);
+
+  @media screen and (min-width: 992px) {
+    font-size: h.rem(24);
+    margin-bottom: h.rem(20);
+  }
 }
 
 span.icon-quote {
@@ -78,4 +83,8 @@ span.icon-quote {
   100% {
     opacity: 0%;
   }
+}
+
+img {
+  max-width: 100%;
 }
