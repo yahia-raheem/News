@@ -1,0 +1,10 @@
+header.site-header {
+  position: absolute;
+  width: 100%;
+  padding-top: h.rem(53);
+
+  img.logo {
+    max-width: 150px;
+    height: auto;
+  }
+}

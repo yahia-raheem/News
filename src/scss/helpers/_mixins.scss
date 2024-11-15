@@ -161,9 +161,7 @@
       @include media(">sm") {
         &.row-first,
         &.row-last {
-          width: calc(
-            50% - #{$field-margin-between-cols * 0.5}
-          );
+          width: calc(50% - #{$field-margin-between-cols * 0.5});
 
           display: inline-block;
           min-width: 200px;
@@ -351,25 +349,9 @@
   }
 }
 
-@mixin page-title {
-  line-height: normal;
-  @include resp-font-size(5.6rem, 2.8rem);
+@function rem($px) {
+  @return math.div($px, 16) * 1rem;
 }
-
-// @mixin main-section-title {
-//   line-height: normal;
-//   @include resp-font-size(4rem, 2.4rem);
-// }
-
-// @mixin main-section-sub-title {
-//   line-height: normal;
-//   @include resp-font-size(3.2rem, 2.4rem);
-// }
-
-// @mixin sub-section-title {
-//   line-height: normal;
-//   @include resp-font-size(2.4rem, 1.8rem);
-// }
 
 // @mixin paragraph {
 //   @include resp-font-size(1.8rem, 1.4rem);
@@ -378,45 +360,3 @@
 //     line-height: 26px;
 //   }
 // }
-
-@mixin adze-link {
-  text-decoration: none;
-  color: #42b0b0;
-  font-size: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: fit-content;
-
-  i {
-    margin-inline-start: 1rem;
-    font-size: 1.5rem;
-  }
-
-  @media screen and (min-width: 992px) {
-    font-size: 1rem;
-
-    i {
-      margin-inline-start: 1rem;
-      font-size: 2rem;
-    }
-  }
-}
-
-@mixin adze-link-cssarrow {
-  @include adze-link();
-
-  &::after {
-    font-family: "icomoon" !important;
-    content: "\e908";
-    color: #42b0b0;
-    font-size: 1.5rem;
-    margin-inline-start: 1rem;
-  }
-
-  @media screen and (min-width: 992px) {
-    &::after {
-      font-size: 2rem;
-    }
-  }
-}
