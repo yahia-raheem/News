@@ -1,0 +1,68 @@
+
+img.popup-target, video.popup-target {
+  display: none;
+}
+.media-popup {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    top: 0;
+    inset-inline-start: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  
+    &.hide {
+      animation-name: fade-out;
+    }
+
+    img.popup-target, video.popup-target {
+      display: block;
+    }
+  
+    .img-wrapper {
+      max-width: 80vw;
+      max-height: 80vh;
+      position: relative;
+      z-index: 3;
+      border-radius: 10px;
+      overflow: auto;
+    }
+
+    .vail {
+      opacity: 0.8;
+    }
+  
+    button {
+      position: absolute;
+      top: 10px;
+      inset-inline-end: 10px;
+      width: h.rem(30);
+      height: h.rem(30);
+      border: none;
+      border-radius: 5px;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      &::after {
+        content: "x";
+        font-size: 1.3rem;
+        color: white;
+        font-weight: 600;
+        display: inline-block;
+        line-height: 0;
+      }
+    }
+  
+    img {
+      position: relative;
+      z-index: 2;
+    }
+  }

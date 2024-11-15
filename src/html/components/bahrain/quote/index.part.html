@@ -10,12 +10,30 @@
         @@include('./parts/upper-para-ar.part.html')
 
         <div class="content-wrapper">
-            <div class="thumb-container">
+            <div class="thumb-container animate fade-in" onclick="document.openPopup(event)">
                 <img src="@@vidThumbImage" alt="Video Thumbnail">
+                <video src="@@video" class="popup-target" controls></video>
             </div>
             <div class="quote-container">
-
+                <div class="quote-card show-icon animate fade-in">
+                    <span class="icon-quote">
+                        <span class="path1"></span>
+                        <span class="path2"></span>
+                    </span>
+                    <p class="content">يصف "البلادي" هذا التغيير لـ"مواطن" قائلاً: "في البداية رأينا الخراطيم تضخ المياه
+                        في البحر، أخبرونا بعد ذلك أنها لتحلية مياه الخليج كي تصلح للشرب والزراعة وغيرها من الاستخدامات
+                        لكن الأمر تفاقم حتى أصبح لون مياه الخليج ورائحتها لا تطاق، تغيّر لونها للأصفر وهربت منها الأسماك
+                        التي نعتاش من صيدها".
+                    </p>
+                    <p class="content">ويضيف عندما لاحظنا التغير في المياه تحدثنا للمسؤولين الذين أخبرونا أن الأمر مؤقت
+                        وسيتم معالجته
+                        في أسرع وقت، لكن الضرر اليوم طال كل شاطئ بحريني، أصبح تواجد الأسماك التي هي أحد مصادر الأمن
+                        الغذائي لسكان البحرين، وجزء كذلك من ثقافتهم المحلية شبه معدوم ولا يقارن بالدول الخليجية أو
+                        العربية الأخرى</p>
+                </div>
             </div>
         </div>
     </div>
+
+    <img src="@@bottomImage" alt="chimnies" class="decoration">
 </section>

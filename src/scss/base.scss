@@ -27,10 +27,11 @@
 
 // Components
 @import "./components/animate";
-
 @import "./components/header";
 @import "./components/hero";
 @import "./components/quote";
+@import "./components/quote-card";
+@import "./components/popup";
 
 a {
   text-decoration: none !important;
@@ -41,3 +42,39 @@ a {
   }
 }
 
+p.content {
+  font-size: h.rem(24);
+  font-weight: 400;
+  margin-bottom: h.rem(20);
+}
+
+span.icon-quote {
+  display: inline-table;
+}
+
+.decoration {
+  position: absolute;
+  width: 100%;
+  max-height: max-content;
+  object-fit: cover;
+  inset-inline-start: 0;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}

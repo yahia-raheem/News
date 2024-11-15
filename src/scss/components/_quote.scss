@@ -1,4 +1,35 @@
 section.quote {
-    background-color: #03152D;
-    padding: 4rem 0;
+  background-color: #03152d;
+  padding: 4rem 0;
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .thumb-container {
+    cursor: pointer;
+  }
+
+  .content-wrapper {
+    margin-top: h.rem(50);
+    display: flex;
+    gap: h.rem(54);
+    margin-bottom: h.rem(234);
+
+    .quote-card {
+      position: relative;
+      top: h.rem(26);
+
+      p:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .decoration {
+    bottom: 0;
+    object-fit: cover;
+    max-height: 371px;
+  }
 }

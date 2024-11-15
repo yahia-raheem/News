@@ -1,0 +1,17 @@
+.quote-card {
+    padding: h.rem(40);
+    background: rgba(10, 29, 55, 0.9);
+
+    &.show-icon {
+        border-radius: 8px;
+        background: rgba(10, 29, 55, 0.8);
+    }
+
+    span.icon-quote {
+        position: absolute;
+        top: 0;
+        inset-inline-end: h.rem(32);
+        transform: translateY(-50%);
+        font-size: h.rem(60);
+    }
+}
