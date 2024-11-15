@@ -354,7 +354,6 @@
   @return math.div($px, 16) * 1rem;
 }
 
-
 @mixin decorativeTitle() {
   position: relative;
   background: v.$primary;
@@ -382,6 +381,19 @@
   }
 }
 
+@mixin newsBtn() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: h.rem(20);
+  line-height: 1;
+  color: #055c53;
+  gap: h.rem(14);
+
+  span {
+    color: #055c53;
+  }
+}
 // @mixin paragraph {
 //   @include resp-font-size(1.8rem, 1.4rem);
 
