@@ -28,11 +28,13 @@
 // Components
 @import "./components/animate";
 @import "./components/header";
-@import "./components/hero";
-@import "./components/quote";
-@import "./components/quote-card";
 @import "./components/popup";
-@import "./components/caption-bg";
+@import "./components/quote-card";
+
+// page components
+@import "./components/bahrain/hero";
+@import "./components/bahrain/quote";
+@import "./components/bahrain/caption-bg";
 
 a {
   text-decoration: none !important;
