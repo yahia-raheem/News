@@ -9,8 +9,28 @@ section.central-content {
     z-index: 1;
   }
 
+  &.mb-big {
+    padding-bottom: h.rem(200);
+  }
+
   .water-plants {
     margin-bottom: h.rem(80);
+  }
+
+  .quote-card {
+    background: rgba(2, 97, 91, 0.6);
+    font-size: h.rem(18);
+    font-weight: 400;
+    margin-bottom: h.rem(30);
+  }
+
+  .decorative-title {
+    font-size: h.rem(28);
+    padding-top: h.rem(16);
+    padding-bottom: h.rem(10);
+    padding-inline: h.rem(24);
+    font-weight: 700;
+    margin-bottom: h.rem(50);
   }
 
   .bg-image {
@@ -58,8 +78,25 @@ section.central-content {
     margin-top: 200px;
     padding-bottom: h.rem(272);
 
+    &.mb-big {
+      padding-bottom: h.rem(481);
+    }  
+
     .water-plants {
       margin-bottom: h.rem(167);
+    }
+
+    .quote-card {
+      font-size: h.rem(24);
+      margin-bottom: h.rem(61);
+    }
+
+    .decorative-title {
+      font-size: h.rem(34);
+      padding-top: h.rem(21);
+      padding-bottom: h.rem(10);
+      padding-inline: h.rem(41);
+      margin-bottom: h.rem(117);
     }
 
     .gulf-map-title {
@@ -78,7 +115,6 @@ section.central-content {
 
     .level1-v-level2 {
       .row {
-
         &:not(:last-of-type) {
           margin-bottom: h.rem(130);
         }
