@@ -2,11 +2,23 @@ section.bg-caption-1 {
   padding-top: h.rem(100);
   padding-bottom: h.rem(200);
 
+  &.p-small {
+    padding-top: h.rem(40);
+    padding-bottom: h.rem(70);
+  }
+
   img.bg-image {
     z-index: -1;
   }
 
   .quote-card {
+    h5 {
+      font-size: h.rem(20);
+      margin-bottom: h.rem(12);
+      font-weight: 700;
+      color: #18E1B4;
+    }
+
     p {
       font-size: h.rem(18);
       margin-bottom: h.rem(12);
@@ -18,14 +30,33 @@ section.bg-caption-1 {
   }
 
   .decoration {
-    bottom: -18%;
+    &:not(.upper-decoration) {
+      bottom: -18%;
+    }
+
+    &.upper-decoration {
+      top: 0;
+      transform: translateY(-50%);
+    }
   }
 
   @media screen and (min-width: 992px) {
     padding-top: h.rem(172);
     padding-bottom: h.rem(454);
 
+    &.p-small {
+      padding-bottom: h.rem(138);
+      padding-top: h.rem(95);
+    }
+
     .quote-card {
+      h5 {
+        font-size: h.rem(40);
+        margin-bottom: h.rem(24);
+        font-weight: 700;
+        color: #18E1B4;
+      }
+
       p {
         font-size: h.rem(24);
         margin-bottom: h.rem(20);
