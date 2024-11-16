@@ -16,7 +16,7 @@ section.bg-caption-1 {
       font-size: h.rem(20);
       margin-bottom: h.rem(12);
       font-weight: 700;
-      color: #18E1B4;
+      color: #18e1b4;
     }
 
     p {
@@ -40,6 +40,15 @@ section.bg-caption-1 {
     }
   }
 
+  .gradient {
+    background: linear-gradient(180deg, rgba(19, 17, 30, 0) 0%, #010e13 75%);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: h.rem(270);
+    z-index: 2;
+  }
+
   @media screen and (min-width: 992px) {
     padding-top: h.rem(172);
     padding-bottom: h.rem(454);
@@ -54,7 +63,7 @@ section.bg-caption-1 {
         font-size: h.rem(40);
         margin-bottom: h.rem(24);
         font-weight: 700;
-        color: #18E1B4;
+        color: #18e1b4;
       }
 
       p {
