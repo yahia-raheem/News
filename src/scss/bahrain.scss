@@ -30,11 +30,13 @@
 @import "./components/header";
 @import "./components/popup";
 @import "./components/quote-card";
+@import "./components/title_styles";
 
 // page components
 @import "./components/bahrain/hero";
 @import "./components/bahrain/quote";
 @import "./components/bahrain/caption-bg";
+@import "./components/bahrain/central-content-1";
 
 a {
   text-decoration: none !important;
@@ -43,6 +45,10 @@ a {
     line-height: 1;
     padding: 1rem;
   }
+}
+
+body {
+  background-color: #03152D;
 }
 
 p.content {
@@ -89,4 +95,21 @@ span.icon-quote {
 
 img {
   max-width: 100%;
+}
+
+.chart-container {
+  width: h.rem(773);
+  max-width: 100%;
+}
+
+.media-container {
+  max-width: 100%;
+  object-fit: contain;
+
+  img, video {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+  }
 }

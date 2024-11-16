@@ -17,6 +17,10 @@ section.bg-caption-1 {
     }
   }
 
+  .decoration {
+    bottom: -18%;
+  }
+
   @media screen and (min-width: 992px) {
     padding-top: h.rem(172);
     padding-bottom: h.rem(454);

@@ -1,0 +1,74 @@
+@use "../base/variables" as v;
+@use "./mixins" as m;
+
+@mixin decorativeTitle() {
+  position: relative;
+  background: v.$primary;
+  color: #353535;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    inset-inline-start: 0;
+    transform: translate(-50%, -50%) rotateZ(45deg);
+    width: 10px;
+    height: 10px;
+    background-color: #0abb93;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    inset-inline-end: 0;
+    transform: translate(50%, -50%) rotateZ(45deg);
+    width: 10px;
+    height: 10px;
+    background-color: #0abb93;
+  }
+}
+
+@mixin decorativeTitle2() {
+  position: relative;
+  padding-bottom: m.rem(23);
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    inset-inline-start: 50%;
+    transform: translateX(-50%);
+    width: m.rem(110);
+    height: 3px;
+    background-color: rgba(120, 113, 91, 1);
+    border-radius: 3px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    inset-inline-start: 50%;
+    transform: translate(-50%, 50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 14px;
+    background-color: rgba(120, 113, 91, 1);
+  }
+}
+
+@mixin newsBtn() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: m.rem(20);
+  line-height: 1;
+  color: #055c53;
+  gap: m.rem(14);
+
+  span {
+    color: #055c53;
+  }
+}

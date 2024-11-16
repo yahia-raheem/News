@@ -1,0 +1,98 @@
+section.central-content {
+  position: relative;
+  z-index: -2;
+  margin-top: 100px;
+  padding-bottom: h.rem(150);
+
+  .content-container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .water-plants {
+    margin-bottom: h.rem(80);
+  }
+
+  .bg-image {
+    position: fixed;
+  }
+
+  .gulf-map-title {
+    font-size: h.rem(20);
+    font-weight: 700;
+    margin-bottom: h.rem(20);
+  }
+
+  .gulf-map {
+    margin-bottom: h.rem(40);
+  }
+
+  .versus {
+    margin-bottom: h.rem(40);
+  }
+
+  .level1-v-level2 {
+    .row {
+      position: relative;
+
+      &:not(:last-of-type) {
+        margin-bottom: h.rem(60);
+      }
+
+      .dots {
+        position: absolute;
+        width: h.rem(174);
+        height: auto;
+        inset-inline-start: 40%;
+        top: 95%;
+      }
+    }
+
+    p {
+      font-size: h.rem(16);
+      margin-bottom: h.rem(24);
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    margin-top: 200px;
+    padding-bottom: h.rem(272);
+
+    .water-plants {
+      margin-bottom: h.rem(167);
+    }
+
+    .gulf-map-title {
+      font-size: h.rem(30);
+      line-height: h.rem(44);
+      margin-bottom: h.rem(46);
+    }
+
+    .gulf-map {
+      margin-bottom: h.rem(79);
+    }
+
+    .versus {
+      margin-bottom: h.rem(83);
+    }
+
+    .level1-v-level2 {
+      .row {
+
+        &:not(:last-of-type) {
+          margin-bottom: h.rem(130);
+        }
+        .dots {
+          width: h.rem(174);
+          inset-inline-start: 40%;
+          top: 95%;
+        }
+      }
+
+      p {
+        font-size: h.rem(24);
+        margin-bottom: 0;
+      }
+    }
+  }
+}

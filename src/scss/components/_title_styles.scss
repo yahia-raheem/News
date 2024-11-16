@@ -1,0 +1,7 @@
+.decorative-title {
+    @include h.decorativeTitle();
+}
+
+.decorative-title-2 {
+    @include h.decorativeTitle2();
+}
