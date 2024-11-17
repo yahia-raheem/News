@@ -1,0 +1,8 @@
+.dash-line {
+    padding: 1em;
+	border-top: 10px solid transparent;
+	border-image: 16 repeating-linear-gradient(75deg, white 0, white 1px, transparent 0, transparent 15px,
+	              white 0, white 6px, transparent 0, transparent 6px);
+	
+	width: 100%;
+}
