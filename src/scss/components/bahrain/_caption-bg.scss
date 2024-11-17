@@ -38,6 +38,11 @@ section.bg-caption-1 {
       top: 0;
       transform: translateY(-50%);
     }
+
+    &.top-0 {
+      top: 0;
+      transform: none;
+    }
   }
 
   .gradient {
