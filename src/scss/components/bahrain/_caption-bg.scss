@@ -29,6 +29,10 @@ section.bg-caption-1 {
     }
   }
 
+  .quote-card.mb-large {
+    margin-bottom: h.rem(100);
+  }
+
   .decoration {
     &:not(.upper-decoration) {
       bottom: -18%;
@@ -54,6 +58,16 @@ section.bg-caption-1 {
     z-index: 2;
   }
 
+  .sec-title {
+    margin-top: h.rem(50);
+    padding-top: h.rem(18);
+    padding-inline: h.rem(24);
+    padding-bottom: h.rem(10);
+    font-size: h.rem(24);
+    font-weight: 700;
+    margin-bottom: h.rem(50);
+  }
+
   @media screen and (min-width: 992px) {
     padding-top: h.rem(172);
     padding-bottom: h.rem(454);
@@ -75,6 +89,19 @@ section.bg-caption-1 {
         font-size: h.rem(24);
         margin-bottom: h.rem(20);
       }
+    }
+
+    .sec-title {
+      margin-top: h.rem(160);
+      padding-top: h.rem(22);
+      padding-inline: h.rem(35);
+      padding-bottom: h.rem(12);
+      font-size: h.rem(34);
+      margin-bottom: h.rem(113);
+    }
+
+    .quote-card.mb-large {
+      margin-bottom: h.rem(256);
     }
   }
 }
