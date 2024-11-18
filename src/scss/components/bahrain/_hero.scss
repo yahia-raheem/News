@@ -62,6 +62,15 @@ section.hero {
     }
   }
 
+  .gradient {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: h.rem(300);
+    background: linear-gradient(180deg, rgba(19, 17, 30, 0) 0%, #03152D 75%);
+    z-index: -1;
+  }
+
   @media screen and (min-width: 992px) {
     height: 100vh;
 

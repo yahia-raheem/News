@@ -1,5 +1,5 @@
 
-img.popup-target, video.popup-target {
+img.popup-target, video.popup-target, iframe.popup-target {
   display: none;
 }
 .media-popup {
@@ -21,7 +21,7 @@ img.popup-target, video.popup-target {
       animation-name: fade-out;
     }
 
-    img.popup-target, video.popup-target {
+    img.popup-target, video.popup-target, iframe.popup-target {
       display: block;
     }
   
@@ -32,6 +32,8 @@ img.popup-target, video.popup-target {
       z-index: 3;
       border-radius: 10px;
       overflow: auto;
+      min-width: 60vw;
+      aspect-ratio: 16/9;
     }
 
     .vail {

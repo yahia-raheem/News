@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
  * @param {PointerEvent} ev - The pointer event on the target DIV
  */
 const openPopup = (ev) => {
-    const img = ev.currentTarget.querySelector('img.popup-target, video.popup-target');
+    const img = ev.currentTarget.querySelector('img.popup-target, video.popup-target, iframe.popup-target');
 
     if (img) {
         const newImage = img.cloneNode(true)

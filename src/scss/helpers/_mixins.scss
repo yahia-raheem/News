@@ -354,7 +354,7 @@
 //   @return math.div($px, 16) * 1rem;
 // }
 @function rem($px) {
-  @return math.div($px, 16) * 1rem;
+  @return math.div($px, 19) * 1rem;
 }
 
 // @mixin paragraph {
