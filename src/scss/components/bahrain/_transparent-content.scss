@@ -35,6 +35,8 @@ section.transparent-content {
     }
 
     &.footer {
+      margin-top: 40px;
+
       p {
         text-align: center;
 
@@ -81,6 +83,8 @@ section.transparent-content {
       }
 
       &.footer {
+        margin-top: 0;
+        
         p {
           &:first-of-type {
             font-size: h.rem(23);

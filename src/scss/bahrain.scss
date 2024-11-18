@@ -37,6 +37,7 @@ body {
 @import "./components/quote-card";
 @import "./components/title_styles";
 @import "./components/dashed-line";
+@import "./components/icon-card";
 
 // page components
 @import "./components/bahrain/hero";
@@ -53,13 +54,24 @@ a {
   text-decoration: none !important;
 
   &.btn {
-    line-height: 1;
-    padding: 1rem;
+    padding: h.rem(12) h.rem(14);
   }
+
+  @media screen and (min-width: 992px) {
+    &.btn {
+      line-height: 1;
+      padding: 1rem;
+    }
+  }
+}
+
+p {
+  line-height: normal !important;
 }
 
 body {
   background-color: #03152d;
+  text-align: justify;
 }
 
 p.content {

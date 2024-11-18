@@ -15,6 +15,16 @@ section.central-content-2 {
     height: h.rem(90);
   }
 
+  .gradient {
+    width: 100%;
+    background: linear-gradient(180deg, rgba(19, 17, 30, 0) 0%, #020D13 75%);
+    position: absolute;
+    top: 0;
+    inset-inline-start: 0;
+    height: h.rem(90);
+    transform: rotateZ(180deg);
+  }
+
   .decorative-title-2 {
     font-size: h.rem(20);
     font-weight: 700;
@@ -65,6 +75,7 @@ section.central-content-2 {
 
     .sec-para {
       font-size: h.rem(24);
+      max-width: 95%;
     }
 
     .quote-card {
@@ -79,7 +90,7 @@ section.central-content-2 {
     }
   }
 
-  @media screen and (min-width: 1919px) {
+  @media screen and (min-width: 1700px) {
     .quote-card {
       position: absolute;
       bottom: h.rem(93);

@@ -63,12 +63,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: m.rem(20);
+  font-size: m.rem(14);
   line-height: 1;
   color: #055c53;
-  gap: m.rem(14);
+  gap: m.rem(10);
 
   span {
     color: #055c53;
+  }
+
+  @media screen and (min-width: 992px) {
+    
+    font-size: m.rem(20);
+    line-height: 1;
+    gap: m.rem(14);
   }
 }

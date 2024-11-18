@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?p4zpp8');
-  src:  url('fonts/icomoon.eot?p4zpp8#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?p4zpp8') format('truetype'),
-    url('fonts/icomoon.woff?p4zpp8') format('woff'),
-    url('fonts/icomoon.svg?p4zpp8#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?bp6mw');
+  src:  url('fonts/icomoon.eot?bp6mw#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?bp6mw') format('truetype'),
+    url('fonts/icomoon.woff?bp6mw') format('woff'),
+    url('fonts/icomoon.svg?bp6mw#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-comment:before {
+  content: "\e902";
+  color: #adaa9f;
+}
 .icon-quote .path1:before {
   content: "\e900";
   color: rgb(95, 90, 72);

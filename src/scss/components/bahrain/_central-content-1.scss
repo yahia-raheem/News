@@ -13,8 +13,9 @@ section.central-content {
     padding-bottom: h.rem(200);
   }
 
-  .water-plants {
+  .icon-card {
     margin-bottom: h.rem(80);
+    margin-top: h.rem(30);
   }
 
   .quote-card {
@@ -44,7 +45,14 @@ section.central-content {
   }
 
   .gulf-map {
-    margin-bottom: h.rem(40);
+    overflow: hidden;
+
+    iframe {
+      position: relative;
+      top: -95px;
+      aspect-ratio: 1/3;
+      width: 100%;
+    }
   }
 
   .versus {
@@ -80,10 +88,11 @@ section.central-content {
 
     &.mb-big {
       padding-bottom: h.rem(481);
-    }  
+    }
 
-    .water-plants {
+    .icon-card {
       margin-bottom: h.rem(167);
+      margin-top: h.rem(60);
     }
 
     .quote-card {
@@ -106,7 +115,12 @@ section.central-content {
     }
 
     .gulf-map {
-      margin-bottom: h.rem(79);
+      iframe {
+        position: relative;
+        top: -95px;
+        aspect-ratio: 1/2;
+        width: 600px;
+      }
     }
 
     .versus {
