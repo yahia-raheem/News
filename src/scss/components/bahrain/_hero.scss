@@ -13,7 +13,7 @@ section.hero {
     padding-top: h.rem(53);
     padding-bottom: h.rem(16);
     padding-inline: h.rem(30);
-    max-width: h.rem(810);
+    max-width: h.rem(676);
     background-color: rgba(4, 30, 54, 0.8);
     backdrop-filter: blur(4px);
     border-top-left-radius: 24px;
@@ -77,7 +77,7 @@ section.hero {
     .card {
       padding-top: h.rem(53);
       padding-bottom: h.rem(20);
-      padding-inline: h.rem(58);
+      padding-inline: h.rem(39);
       border-top-left-radius: 32px;
       border-bottom-right-radius: 40px;
 
@@ -97,7 +97,7 @@ section.hero {
         margin-bottom: h.rem(24);
 
         h4 {
-          font-size: h.rem(40);
+          font-size: h.rem(36);
         }
       }
     }
