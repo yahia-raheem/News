@@ -82,6 +82,38 @@ section.central-content {
     }
   }
 
+  .tabs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: h.rem(30);
+
+    .controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: h.rem(16);
+
+      button {
+        border-radius: 8px;
+        border: 3px solid white;
+        padding: h.rem(18);
+        font-size: h.rem(18);
+        font-weight: 500;
+        color: white;
+        transition: all 0.5s;
+
+        &.selected {
+          border-color: #18e1b4;
+          background: #18e1b4;
+          color: #055c53;
+        }
+      }
+    }
+  }
+
   @media screen and (min-width: 992px) {
     margin-top: 200px;
     padding-bottom: h.rem(272);
@@ -117,7 +149,7 @@ section.central-content {
     .gulf-map {
       iframe {
         position: relative;
-        top: -95px;
+        top: -35px;
         aspect-ratio: 1/2;
         width: 600px;
       }
@@ -142,6 +174,19 @@ section.central-content {
       p {
         font-size: h.rem(24);
         margin-bottom: 0;
+      }
+    }
+
+    .tabs-container {
+      gap: h.rem(62);
+
+      .controls {
+        gap: h.rem(28);
+
+        button {
+          padding: h.rem(24);
+          font-size: h.rem(24);
+        }
       }
     }
   }
