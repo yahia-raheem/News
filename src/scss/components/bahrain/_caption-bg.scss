@@ -69,6 +69,15 @@ section.bg-caption-1 {
     margin-bottom: h.rem(50);
   }
 
+  footer {
+    margin-top: 30px;
+    p {
+      font-size: h.rem(18);
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+
   @media screen and (min-width: 992px) {
     padding-top: h.rem(172);
     padding-bottom: h.rem(454);
@@ -103,6 +112,20 @@ section.bg-caption-1 {
 
     .quote-card.mb-large {
       margin-bottom: h.rem(256);
+    }
+
+    footer {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      inset-inline-start: 0;
+      z-index: 1;
+      margin-top: 0;
+
+      p {
+        font-size: h.rem(24);
+        line-height: h.rem(44);
+      }
     }
   }
 }

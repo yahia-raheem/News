@@ -1,6 +1,8 @@
 .quote-card {
   padding: h.rem(32);
   background: rgba(10, 29, 55, 0.9);
+  position: relative;
+  z-index: 5;
 
   &.show-icon {
     border-radius: 8px;
