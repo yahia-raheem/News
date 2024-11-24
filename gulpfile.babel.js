@@ -19,6 +19,8 @@ import zip from "gulp-zip";
 import info from "./package.json" assert { type: "json" };
 import browserSync from "browser-sync";
 import fileinclude from "gulp-file-include";
+import imagemin from "gulp-imagemin";
+import webp from 'gulp-webp';
 
 const sass = gulpSass(dartSass);
 
@@ -44,6 +46,18 @@ export const styles = () => {
     .pipe(gulpif(!PRODUCTION, sourcemaps.write()))
     .pipe(gulp.dest("dist/assets/css/"));
 };
+
+export const optimiseImages = () => {
+  return gulp.src(["src/images/**/*"])
+  .pipe(imagemin({ progressive: true, verbose: true }))
+  .pipe(gulp.dest('dist/images'));
+}
+
+export const convertToWebp = () => {
+  return gulp.src(["dist/images/**/*"])
+  .pipe(webp({quality: 100}))
+  .pipe(gulp.dest('dist/webp'))
+}
 
 export const rtlStyles = () => {
   return gulp
@@ -175,6 +189,8 @@ export const build = gulp.series(
   rtlStyles,
   postStyles,
   fileInclude,
+  optimiseImages,
+  convertToWebp
   // compress
 );
 export default dev;
