@@ -11,7 +11,14 @@ document.addEventListener("DOMContentLoaded", () => {
 const _fadeIn = (el) => {
   elementObserver(
     (options) => {
-      options.element.classList.add("visible");
+      const hasDelay = options.element.getAttribute("data-delay");
+      if (hasDelay) {
+        setTimeout(() => {
+          options.element.classList.add("visible");
+        }, +hasDelay);
+      } else {
+        options.element.classList.add("visible");
+      }
     },
     { element: el }
   );
