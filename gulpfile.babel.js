@@ -169,7 +169,7 @@ export const watchForChanges = () => {
     .on("all", gulp.series(styles, rtlStyles, postStyles));
   gulp
     .watch(["src/**/*", "!src/{js,scss}", "!src/{js,scss}/**/*"])
-    .on("all", copy, reload);
+    .on("all", copy, convertToWebp, reload);
   gulp.watch("src/js/**/*.js").on("all", gulp.series(scripts, reload));
   gulp.watch("**/*.html").on("all", gulp.series(fileInclude, reload));
 };
@@ -179,6 +179,7 @@ export const dev = gulp.series(
   gulp.parallel(styles, copy, scripts),
   rtlStyles,
   fileInclude,
+  convertToWebp,
   serve,
   watchForChanges
 );
