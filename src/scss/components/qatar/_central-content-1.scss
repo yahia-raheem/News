@@ -1,0 +1,30 @@
+.central-content-1 {
+    position: relative;
+    padding-bottom: 70px;
+
+    .decoration {
+        top: 0;
+        transform: translateY(-70%);
+    }
+
+    .bg-image {
+        z-index: -1;
+    }
+
+    .content-container {
+        position: relative;
+        z-index: 1;
+        top: -70px;
+    }
+
+    .media-container {
+        margin-bottom: h.rem(95);
+    }
+
+    .small-title {
+        font-size: h.rem(32);
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: h.rem(80);
+    }
+}
