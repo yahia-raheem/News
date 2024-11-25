@@ -33,10 +33,14 @@ body {
 // Components
 @import "./components/animate";
 @import "./components/header";
+@import "./components/popup";
+@import "./components/quote-card";
+@import "./components/icon-title-card";
 
 
 // page components
 @import "./components/qatar/hero";
+@import "./components/qatar/quote";
 
 a {
   text-decoration: none !important;
@@ -84,6 +88,7 @@ span.icon-quote {
     min-height: 100%;
     min-width: 100%;
     object-fit: cover;
+    max-width: 250%;
   }
 }
 

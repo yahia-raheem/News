@@ -1,0 +1,125 @@
+section.quote {
+  background-color: #03152d;
+  padding-bottom: h.rem(150);
+  padding-top: h.rem(40);
+
+  .content-wrapper {
+    position: relative;
+    z-index: 1;
+  }
+
+  .decoration {
+    bottom: 0;
+  }
+
+  .quote-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: h.rem(18);
+    margin-bottom: h.rem(20);
+
+    p {
+      font-size: h.rem(18);
+      font-weight: 400;
+    }
+
+    .quote-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .thumb-container {
+      width: 100%;
+      border-bottom: 4px solid #737373;
+      border-start-end-radius: 24px;
+      border-end-start-radius: 24px;
+      overflow: hidden;
+      aspect-ratio: 512/337;
+    }
+
+    .quote-container {
+      width: 100%;
+    }
+  }
+
+  .card-caption {
+    font-size: h.rem(16);
+    font-weight: 400;
+    color: #18e1b4;
+    margin-bottom: h.rem(20);
+  }
+
+  .small-heading {
+    font-size: h.rem(16);
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: h.rem(25);
+  }
+
+  .cards-row {
+    margin-bottom: h.rem(25);
+  }
+
+  .bottom-para-container {
+    display: flex;
+    flex-direction: column;
+    gap: h.rem(16);
+
+    p {
+      font-size: h.rem(18);
+      font-weight: 500;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    padding-bottom: h.rem(300);
+    padding-top: 0;
+
+    .content-wrapper {
+      top: -65px;
+    }
+
+    .quote-card {
+      gap: h.rem(32);
+      margin-bottom: h.rem(40);
+      flex-wrap: nowrap;
+
+      p {
+        font-size: h.rem(24);
+      }
+
+      .thumb-container {
+        width: calc(45% - h.rem(16));
+      }
+
+      .quote-container {
+        width: calc(65% - h.rem(16));
+      }
+    }
+
+    .card-caption {
+      font-size: h.rem(24);
+      margin-bottom: h.rem(40);
+    }
+
+    .small-heading {
+      font-size: h.rem(24);
+      margin-bottom: h.rem(55);
+    }
+
+    .cards-row {
+      margin-bottom: h.rem(55);
+    }
+
+    .bottom-para-container {
+      gap: h.rem(30);
+
+      p {
+        font-size: h.rem(24);
+        font-weight: 500;
+      }
+    }
+  }
+}
