@@ -1,0 +1,38 @@
+.asset-title-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: h.rem(16);
+
+  .icon {
+    @include h.circle(h.rem(100));
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    font-size: h.rem(18);
+    text-align: center;
+    max-width: 70%;
+    font-weight: 500;
+  }
+
+  @media screen and (min-width: 992px) {
+    
+    gap: h.rem(25);
+
+    .icon {
+      @include h.circle(h.rem(222));
+      
+    }
+
+    .title {
+      font-size: h.rem(24);
+      max-width: h.rem(315);
+      line-height: h.rem(34);
+    }
+  }
+}

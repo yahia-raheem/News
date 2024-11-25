@@ -93,7 +93,7 @@ export const postStyles = () => {
 
 export const scripts = () => {
   return gulp
-    .src(["src/js/bundle.js", "src/js/bundle-rtl.js"])
+    .src(["src/js/*.js"])
     .pipe(named())
     .pipe(
       webpack({
