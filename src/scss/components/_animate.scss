@@ -4,9 +4,21 @@
     transform: translateY(20px); /* Adjust as needed */
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 
+    &.d-start {
+      transform: translateY(0) translateX(-20px);
+    }
+
+    &.d-end {
+      transform: translateY(0) translateX(20px);
+    }
+
     &.visible {
       opacity: 1;
       transform: translateY(0);
+
+      &.d-start, &.d-end {
+        transform: translateX(0);
+      }
     }
   }
 
