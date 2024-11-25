@@ -12,7 +12,7 @@ const _fadeIn = (el) => {
   elementObserver(
     (options) => {
       const hasDelay = options.element.getAttribute("data-delay");
-      if (hasDelay) {
+      if (hasDelay && window.innerWidth >= 992) {
         setTimeout(() => {
           options.element.classList.add("visible");
         }, +hasDelay);
