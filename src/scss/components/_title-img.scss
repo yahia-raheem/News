@@ -1,0 +1,49 @@
+.title-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: h.rem(23);
+
+  h5 {
+    font-size: h.rem(22);
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    padding-bottom: h.rem(18);
+
+    &:after {
+      content: "";
+      width: h.rem(67);
+      height: 4px;
+      border-radius: 4px;
+      background-color: #18e1b4;
+      position: absolute;
+      bottom: 0;
+      inset-inline-start: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  img {
+    aspect-ratio: 407/308;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 992px) {
+    gap: h.rem(23);
+
+    h5 {
+      font-size: h.rem(26);
+      padding-bottom: h.rem(24);
+
+      &:after {
+        width: h.rem(67);
+      }
+    }
+
+    img {
+      aspect-ratio: 407/308;
+    }
+  }
+}
