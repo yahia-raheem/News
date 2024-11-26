@@ -16,7 +16,7 @@
     z-index: 1;
   }
 
-  .media-container {
+  .media-container:not(:last-of-type) {
     margin-bottom: h.rem(30);
   }
 
@@ -54,6 +54,7 @@
 
   @media screen and (min-width: 992px) {
     padding: 0;
+    margin-bottom: -70px;
 
     .decoration {
       transform: translateY(-70%);
@@ -63,7 +64,7 @@
       top: -70px;
     }
 
-    .media-container {
+    .media-container:not(:last-of-type) {
       margin-bottom: h.rem(95);
     }
 
