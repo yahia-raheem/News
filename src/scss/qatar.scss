@@ -36,12 +36,15 @@ body {
 @import "./components/popup";
 @import "./components/quote-card";
 @import "./components/icon-title-card";
+@import "./components/title-img";
 
 
 // page components
 @import "./components/qatar/hero";
 @import "./components/qatar/quote";
 @import "./components/qatar/central-content-1";
+@import "./components/qatar/central-content-2";
+@import "./components/qatar/bg-caption-1";
 
 a {
   text-decoration: none !important;
@@ -123,6 +126,8 @@ img {
 .media-container {
   max-width: 100%;
   object-fit: contain;
+  display: flex;
+  justify-content: center;
 
   img,
   video {
