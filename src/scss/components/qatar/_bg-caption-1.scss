@@ -27,6 +27,11 @@ section.bg-caption-1 {
       background: #01303AE5;
       border-radius: h.rem(16);
     }
+
+    &.alt-2 {
+      border-start-start-radius: h.rem(32);
+      border-end-end-radius: h.rem(32);
+    }
   }
 
   .decoration {
