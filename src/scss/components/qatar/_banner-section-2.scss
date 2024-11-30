@@ -12,6 +12,14 @@ section.banner-section-2 {
     z-index: 1;
   }
 
+  &.alt {
+    background-color: #03152d;
+
+    .side-decoration {
+      opacity: 0.4;
+    }
+  }
+
   .gradient {
     background: linear-gradient(90deg, rgba(2, 50, 64, 0) 0%, #013039 100%);
     width: 100%;
