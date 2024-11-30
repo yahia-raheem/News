@@ -22,6 +22,11 @@ section.bg-caption-1 {
         margin-bottom: 0;
       }
     }
+
+    &.alt {
+      background: #01303AE5;
+      border-radius: h.rem(16);
+    }
   }
 
   .decoration {
