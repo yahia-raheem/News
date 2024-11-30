@@ -1,6 +1,6 @@
 section.bg-caption-1 {
-  padding-top: h.rem(40);
-  padding-bottom: h.rem(20);
+  padding-top: h.rem(80);
+  padding-bottom: h.rem(60);
 
   img.bg-image {
     z-index: -1;
@@ -22,6 +22,16 @@ section.bg-caption-1 {
         margin-bottom: 0;
       }
     }
+
+    &.alt {
+      background: #01303AE5;
+      border-radius: h.rem(16);
+    }
+
+    &.alt-2 {
+      border-start-start-radius: h.rem(32);
+      border-end-end-radius: h.rem(32);
+    }
   }
 
   .decoration {
@@ -29,17 +39,9 @@ section.bg-caption-1 {
     transform: none;
   }
 
-  .gradient {
-    background: linear-gradient(180deg, rgba(19, 17, 30, 0) 0%, #010e13 75%);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: h.rem(100);
-  }
-
   @media screen and (min-width: 992px) {
-    padding-top: h.rem(109);
-    padding-bottom: h.rem(43);
+    padding-top: h.rem(191);
+    padding-bottom: h.rem(120);
 
     .quote-card {
       h5 {
@@ -51,10 +53,6 @@ section.bg-caption-1 {
         font-size: h.rem(24);
         margin-bottom: h.rem(24);
       }
-    }
-
-    .gradient {
-      height: h.rem(210);
     }
   }
 }

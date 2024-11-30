@@ -1,6 +1,6 @@
 section.quote {
   background-color: #03152d;
-  padding-bottom: h.rem(150);
+  padding-bottom: h.rem(48);
   padding-top: h.rem(40);
 
   .content-wrapper {
@@ -8,8 +8,47 @@ section.quote {
     z-index: 1;
   }
 
+  .sec-title {
+    h5 {
+      font-size: h.rem(24);
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: h.rem(30);
+    }
+
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      gap: h.rem(24);
+      margin-bottom: h.rem(52);
+
+      a {
+        @include h.newsBtn();
+        padding: h.rem(16) h.rem(13) h.rem(13);
+
+        &.alt {
+          background: #055C53;
+          border-color: #055C53;
+
+          span {
+            color: #18E1B4;
+          }
+        }
+      }
+    }
+  }
+
   .decoration {
     bottom: 0;
+
+    &.top-decoration {
+      top: 0;
+      transform: translateY(-100%);
+      bottom: unset;
+      display: none;
+    }
   }
 
   .quote-card {
@@ -77,8 +116,10 @@ section.quote {
     padding-bottom: h.rem(300);
     padding-top: 0;
 
-    .content-wrapper {
-      top: -65px;
+    .decoration {  
+      &.top-decoration {
+        display: block;
+      }
     }
 
     .quote-card {

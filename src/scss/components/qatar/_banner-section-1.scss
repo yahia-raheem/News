@@ -1,0 +1,25 @@
+section.banner-section-1 {
+  background: #020b18;
+  padding: h.rem(35) 0;
+
+  p {
+    font-size: h.rem(18);
+    font-weight: 400;
+
+    &:not(:last-of-type) {
+      margin-bottom: h.rem(16);
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: h.rem(129) 0;
+
+    p {
+      font-size: h.rem(24);
+
+      &:not(:last-of-type) {
+        margin-bottom: h.rem(30);
+      }
+    }
+  }
+}

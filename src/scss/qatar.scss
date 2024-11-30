@@ -45,6 +45,9 @@ body {
 @import "./components/qatar/central-content-1";
 @import "./components/qatar/central-content-2";
 @import "./components/qatar/bg-caption-1";
+@import "./components/qatar/central-content-3";
+@import "./components/qatar/banner-section-1";
+@import "./components/qatar/banner-section-2";
 
 a {
   text-decoration: none !important;
@@ -140,4 +143,9 @@ img {
 
 .flourish-credit {
   display: none;
+}
+
+.page-bg {
+  position: fixed;
+  z-index: -1;
 }

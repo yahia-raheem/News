@@ -26,8 +26,8 @@
   }
 
   img {
-    aspect-ratio: 407/308;
     width: 100%;
+    height: auto;
   }
 
   @media screen and (min-width: 992px) {
@@ -36,14 +36,13 @@
     h5 {
       font-size: h.rem(26);
       padding-bottom: h.rem(24);
+      min-height: 73px;
+      display: flex;
+      align-items: center;
 
       &:after {
         width: h.rem(67);
       }
-    }
-
-    img {
-      aspect-ratio: 407/308;
     }
   }
 }
