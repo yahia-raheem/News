@@ -1,0 +1,35 @@
+section.central-content-3 {
+  padding-top: h.rem(70);
+  padding-bottom: h.rem(22);
+
+  .decoration {
+    top: 0;
+  }
+
+  p {
+    font-size: h.rem(18);
+    font-weight: 400;
+    margin-bottom: h.rem(12);
+
+    &.prefix {
+      font-weight: 500;
+      color: #ddd8ca;
+      text-align: center;
+      margin: h.rem(25) 0 h.rem(45);
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    padding-top: h.rem(166);
+    padding-bottom: h.rem(33);
+
+    p {
+      font-size: h.rem(24);
+      margin-bottom: h.rem(20);
+
+      &.prefix {
+        margin: h.rem(58) 0 h.rem(94);
+      }
+    }
+  }
+}
