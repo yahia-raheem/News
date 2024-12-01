@@ -24,13 +24,30 @@ section.bg-caption-1 {
     }
 
     &.alt {
-      background: #01303AE5;
+      background: #01303ae5;
       border-radius: h.rem(16);
     }
 
     &.alt-2 {
       border-start-start-radius: h.rem(32);
       border-end-end-radius: h.rem(32);
+    }
+
+    &.alt-4 {
+      border-radius: 8px;
+      padding: h.rem(20);
+      background: #068b92f7;
+
+      h5 {
+        font-size: h.rem(18);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: h.rem(18);
+        gap: h.rem(12);
+        line-height: 0;
+        color: #F2C94C;
+      }
     }
   }
 
@@ -52,6 +69,16 @@ section.bg-caption-1 {
       p {
         font-size: h.rem(24);
         margin-bottom: h.rem(24);
+      }
+
+      &.alt-4 {
+        padding: h.rem(26) h.rem(34);
+
+        h5 {
+          font-size: h.rem(26);
+          margin-bottom: h.rem(30);
+          gap: h.rem(16);
+        }
       }
     }
   }

@@ -1,5 +1,6 @@
 .central-content-2 {
   padding-top: h.rem(50);
+  padding-bottom: h.rem(50);
   background: #03152d;
 
   .decoration {
@@ -58,6 +59,7 @@
 
   @media screen and (min-width: 992px) {
     padding-top: h.rem(200);
+    padding-bottom: h.rem(111);
 
     .decoration {
       top: -70px;
