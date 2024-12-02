@@ -53,12 +53,25 @@ section.bg-caption-1 {
 
   .decoration {
     top: 0;
-    transform: none;
+    transform: rotateZ(180deg);
+  }
+
+  .triangle {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    @include h.arrow("left", #03152D, 50px, 50px, "solid");
+    inset-inline-end: 0;
+    transform: translateY(50%);
   }
 
   @media screen and (min-width: 992px) {
     padding-top: h.rem(191);
     padding-bottom: h.rem(120);
+
+    &.padding-alt {
+      padding: h.rem(234) 0;
+    }
 
     .quote-card {
       h5 {
@@ -80,6 +93,10 @@ section.bg-caption-1 {
           gap: h.rem(16);
         }
       }
+    }
+
+    .triangle {
+      @include h.arrow("left", #03152D, 169px, 169px, "solid");
     }
   }
 }

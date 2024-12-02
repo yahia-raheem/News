@@ -65,8 +65,9 @@ section.quote {
     .quote-container {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: flex-start;
+      gap: h.rem(30);
     }
 
     .thumb-container {
