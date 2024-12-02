@@ -113,12 +113,13 @@
         .upper {
           display: flex;
           justify-content: flex-start;
-          align-items: flex-start;
+          align-items: center;
           gap: h.rem(5);
 
           span.number {
             font-size: h.rem(30);
             color: #f9bd3a;
+            font-weight: 700;
           }
 
           span {
@@ -127,7 +128,6 @@
             &.caption {
               display: flex;
               flex-direction: column;
-              gap: h.rem(5);
               font-size: h.rem(16);
               font-weight: 500;
 
@@ -226,17 +226,16 @@
             span.number {
               font-size: h.rem(58);
               min-width: h.rem(40);
-              line-height: 0;
+              line-height: normal;
             }
 
             span {
 
               &.caption {
-                gap: h.rem(11);
                 font-size: h.rem(22);
 
                 span.title {
-                  line-height: 0;
+                  line-height: normal;
                 }
               }
             }
