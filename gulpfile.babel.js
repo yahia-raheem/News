@@ -127,6 +127,12 @@ export const copy = () => {
     .pipe(gulp.dest("dist"));
 };
 
+export const copyToDocs = () => {
+  return gulp
+  .src(["dist/**/*"])
+  .pipe(gulp.dest("docs"))
+}
+
 export const compress = () => {
   return gulp
     .src([
@@ -152,6 +158,7 @@ export const compress = () => {
 };
 
 export const clean = () => deleteAsync(["dist", "bundled"]);
+export const cleanDocs = () => deleteAsync(["docs"]);
 
 const server = browserSync.create();
 export const serve = (done) => {
@@ -193,5 +200,10 @@ export const build = gulp.series(
   optimiseImages,
   convertToWebp
   // compress
+);
+
+export const deployToDocs = gulp.series(
+  cleanDocs,
+  copyToDocs
 );
 export default dev;
