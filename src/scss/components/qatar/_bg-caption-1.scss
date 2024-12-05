@@ -69,6 +69,13 @@ section.bg-caption-1 {
     padding-top: h.rem(191);
     padding-bottom: h.rem(120);
 
+    &.video-bg {
+      aspect-ratio: 16/9;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
     &.padding-alt {
       padding: h.rem(234) 0;
     }
