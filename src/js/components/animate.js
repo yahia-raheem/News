@@ -2,6 +2,7 @@ import { elementObserver, findAndDoForEach } from "./helper-funcs.js";
 document.addEventListener("DOMContentLoaded", () => {
   findAndDoForEach(".animate.fade-in", _fadeIn);
   findAndDoForEach(".animate.scale", _scaleWithScroll);
+  findAndDoForEach(".animate.typewriter", _typeWriterWrapper);
 });
 
 /**
@@ -37,4 +38,47 @@ const _scaleWithScroll = (el) => {
 
     el.style.transform = `scale(${imageScale})`;
   });
+};
+
+const _typeWriterWrapper = (el) => {
+  elementObserver(
+    (options) => {
+      _typeWriterInner(options.element)
+    },
+    { element: el }
+  );
+}
+
+/**
+ * A function that scales images on zoom.
+ * The image scales up on scroll down to a maximum of 2.5 zoom and it scales down on scroll up to the min which is 1
+ * @param {HTMLBaseElement} el An element you want to scale on scroll
+ */
+const _typeWriterInner = (el) => {
+  const speed = el.getAttribute("data-speed") ?? 50;
+  const delay = el.getAttribute("data-delay");
+  const txt = el.getAttribute("data-content");
+
+  if (!txt) {
+    return;
+  }
+
+  let i = 0;
+
+  const typewriter = () => {
+    if (i < txt.length) {
+      el.innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typewriter, speed);
+    }
+  };
+
+  if (delay && window.innerWidth >= 992) {
+    console.log('got here for: ', el, "with delay: ", +delay)
+    setTimeout(() => {
+      typewriter();
+    }, +delay);
+  } else {
+    typewriter();
+  }
 };
