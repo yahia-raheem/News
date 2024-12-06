@@ -1,8 +1,8 @@
 section.footer {
-  padding: h.rem(65) 0;
   background-color: #03152d;
 
   .footer-container {
+    padding: h.rem(65) 0;
     position: relative;
 
     .bg-image {
@@ -66,7 +66,9 @@ section.footer {
   }
 
   @media screen and (min-width: 992px) {
-    padding: h.rem(65) 0;
+    .footer-container {
+      padding: h.rem(65) 0;
+    }
 
     p {
       font-size: h.rem(24);
