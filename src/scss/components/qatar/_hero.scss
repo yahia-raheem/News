@@ -1,5 +1,13 @@
 section.hero {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .content {
+    z-index: 3;
+    position: relative;    
+  }
 
 
   .gradient {
