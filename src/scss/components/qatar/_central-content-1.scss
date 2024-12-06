@@ -96,11 +96,11 @@
   .cards-container {
     .card {
       display: flex;
-      gap: h.rem(7);
+      gap: h.rem(30);
       margin-bottom: h.rem(40);
 
       img {
-        max-width: h.rem(70);
+        max-width: h.rem(90);
         aspect-ratio: 1/1;
         max-height: fit-content;
       }
@@ -114,10 +114,10 @@
           display: flex;
           justify-content: flex-start;
           align-items: center;
-          gap: h.rem(5);
+          gap: h.rem(8);
 
           span.number {
-            font-size: h.rem(30);
+            font-size: h.rem(36);
             color: #f9bd3a;
             font-weight: 700;
           }
@@ -142,7 +142,7 @@
           .number {
             font-size: h.rem(26);
             font-weight: 700;
-            margin-bottom: h.rem(6);
+            // margin-bottom: h.rem(6);
             color: #f9bd3a;
           }
 

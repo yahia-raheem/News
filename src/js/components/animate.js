@@ -13,7 +13,8 @@ const _fadeIn = (el) => {
   elementObserver(
     (options) => {
       const hasDelay = options.element.getAttribute("data-delay");
-      if (hasDelay && window.innerWidth >= 992) {
+      const forceDelay = options.element.getAttribute("data-force-delay");
+      if (hasDelay && (window.innerWidth >= 992 || forceDelay) ) {
         setTimeout(() => {
           options.element.classList.add("visible");
         }, +hasDelay);
@@ -73,8 +74,7 @@ const _typeWriterInner = (el) => {
     }
   };
 
-  if (delay && window.innerWidth >= 992) {
-    console.log('got here for: ', el, "with delay: ", +delay)
+  if (delay) {
     setTimeout(() => {
       typewriter();
     }, +delay);
