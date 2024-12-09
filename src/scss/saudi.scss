@@ -38,6 +38,7 @@ body {
 
 // page components
 @import "./components/saudi/hero";
+@import "./components/saudi/banner-sec-1";
 
 
 a {
@@ -58,6 +59,15 @@ a {
 body {
   background-color: #03152d;
   text-align: justify;
+  
+  p {
+    font-size: h.rem(16);
+    font-weight: 400;
+    
+    @media screen and (min-width: 992px) {
+      font-size: h.rem(24);
+    }
+  }
 }
 
 p.content {
