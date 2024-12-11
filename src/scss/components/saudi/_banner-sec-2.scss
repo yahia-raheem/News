@@ -1,0 +1,22 @@
+section.banner-section-2 {
+  padding: h.rem(80) 0;
+
+  .quote-card {
+    background: #003a88db;
+    font-weight: 500;
+
+    p:not(:last-of-type) {
+      margin-bottom: h.rem(16);
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: h.rem(213) 0;
+
+    .quote-card {
+      p:not(:last-of-type) {
+        margin-bottom: h.rem(30);
+      }
+    }
+  }
+}

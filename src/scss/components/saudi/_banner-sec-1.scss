@@ -1,0 +1,38 @@
+section.banner-section-1 {
+  background: #00183a;
+  padding: h.rem(25) 0 h.rem(40);
+
+  .media-container {
+    margin-bottom: h.rem(50);
+  }
+
+  .para-container {
+    display: flex;
+    flex-direction: column;
+    gap: h.rem(10);
+  }
+
+  .bottom-asset {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    inset-inline-end: 0;
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: h.rem(50) 0 h.rem(80);
+
+    .media-container {
+      margin-bottom: h.rem(103);
+    }
+
+    .para-container {
+      gap: h.rem(20);
+    }
+  }
+}

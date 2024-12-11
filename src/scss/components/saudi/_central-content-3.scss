@@ -1,0 +1,139 @@
+section.central-content-3 {
+  padding: h.rem(60) 0 h.rem(60);
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .section-prefix {
+    margin-bottom: h.rem(40);
+  }
+
+  .abs-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    margin-bottom: h.rem(40);
+
+    .title {
+      font-size: h.rem(16);
+      font-weight: 500;
+      margin-bottom: h.rem(24);
+      height: h.rem(22);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      margin-bottom: h.rem(18);
+    }
+
+    .suffix {
+      .number {
+        font-size: h.rem(20);
+        font-weight: 700;
+        color: #18e1b4;
+        margin-bottom: h.rem(7);
+      }
+      .caption {
+        font-size: h.rem(16);
+      }
+    }
+  }
+
+  .caption-card {
+    padding: h.rem(12) h.rem(14);
+    color: #18e1b4;
+    border: 1px solid #18e1b4;
+    text-align: center;
+    margin-top: h.rem(40);
+    margin-bottom: h.rem(60);
+
+    p {
+      font-size: h.rem(16);
+    }
+  }
+
+  .title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: h.rem(40);
+
+    h5 {
+      font-size: h.rem(16);
+      font-weight: 500;
+
+      &:last-of-type {
+        color: #18e1b4;
+      }
+    }
+
+    i {
+      display: inline-table;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: h.rem(142) 0 h.rem(170);
+
+    .section-prefix {
+      margin-bottom: h.rem(80);
+    }
+
+    .abs-card {
+      margin-bottom: 0;
+
+      .title {
+        font-size: h.rem(22);
+        margin-bottom: h.rem(42);
+        height: h.rem(44);
+        max-width: h.rem(251);
+      }
+
+      img {
+        width: 120px;
+        height: 120px;
+        margin-bottom: h.rem(27);
+      }
+
+      .suffix {
+        .number {
+          font-size: h.rem(40);
+          line-height: h.rem(25);
+          margin-bottom: h.rem(14);
+        }
+        .caption {
+          line-height: h.rem(14);
+          font-size: h.rem(22);
+        }
+      }
+    }
+
+    .caption-card {
+      padding: h.rem(16) h.rem(24);
+      margin-top: h.rem(82);
+      margin-bottom: h.rem(131);
+
+      p {
+        font-size: h.rem(20);
+      }
+    }
+
+    .title-container {
+      margin-bottom: h.rem(77);
+
+      h5 {
+        font-size: h.rem(30);
+        line-height: h.rem(42);
+      }
+    }
+  }
+}

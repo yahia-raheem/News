@@ -1,0 +1,51 @@
+.media-container {
+  max-width: 100%;
+  object-fit: contain;
+
+  &.has-caption {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: h.rem(16);
+  }
+
+  img,
+  video {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .caption {
+    text-align: center;
+
+    .text {
+      font-size: h.rem(16);
+      font-weight: 500;
+    }
+
+    .suffix {
+      font-size: h.rem(12);
+      font-weight: 400;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    &.has-caption {
+      gap: h.rem(28);
+    }
+
+    .caption {
+      .text {
+        font-size: h.rem(22);
+      }
+
+      .suffix {
+        font-size: h.rem(18);
+      }
+    }
+  }
+}
