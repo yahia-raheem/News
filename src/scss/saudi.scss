@@ -35,7 +35,7 @@ body {
 @import "./components/header";
 @import "./components/loader";
 @import "./components/quote-card";
-
+@import "./components/media-container";
 
 // page components
 @import "./components/saudi/hero";
@@ -45,7 +45,7 @@ body {
 @import "./components/saudi/bg-caption-1";
 @import "./components/saudi/bg-caption-2";
 @import "./components/saudi/banner-sec-2";
-
+@import "./components/saudi/central-content-3";
 
 a {
   text-decoration: none !important;
@@ -65,11 +65,11 @@ a {
 body {
   background-color: #03152d;
   text-align: justify;
-  
+
   p {
     font-size: h.rem(16);
     font-weight: 400;
-    
+
     @media screen and (min-width: 992px) {
       font-size: h.rem(24);
     }
@@ -131,37 +131,6 @@ img {
 .chart-container {
   width: h.rem(773);
   max-width: 100%;
-}
-
-.media-container {
-  max-width: 100%;
-  object-fit: contain;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: h.rem(28);
-
-  img,
-  video {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-  }
-
-  .caption {
-    text-align: center;
-  
-    .text {
-      font-size: h.rem(22);
-      font-weight: 500;
-    }
-
-    .suffix {
-      font-size: h.rem(18);
-      font-weight: 400;
-    }
-  }
 }
 
 .flourish-credit {
