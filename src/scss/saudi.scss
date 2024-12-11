@@ -43,6 +43,7 @@ body {
 @import "./components/saudi/central-content-1";
 @import "./components/saudi/central-content-2";
 @import "./components/saudi/bg-caption-1";
+@import "./components/saudi/bg-caption-2";
 
 
 a {
@@ -136,6 +137,8 @@ img {
   object-fit: contain;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  gap: h.rem(28);
 
   img,
   video {
@@ -143,6 +146,20 @@ img {
     max-height: 100%;
     width: auto;
     height: auto;
+  }
+
+  .caption {
+    text-align: center;
+  
+    .text {
+      font-size: h.rem(22);
+      font-weight: 500;
+    }
+
+    .suffix {
+      font-size: h.rem(18);
+      font-weight: 400;
+    }
   }
 }
 
