@@ -1,0 +1,41 @@
+section.bg-caption-3 {
+  padding: h.rem(60) 0 h.rem(60);
+
+  .quote-card {
+    background: #325781f2;
+
+    .title {
+      display: flex;
+      align-items: center;
+      font-size: h.rem(16);
+      font-weight: 700;
+      margin-bottom: h.rem(16);
+      gap: h.rem(12);
+
+      i {
+        font-size: h.rem(16);
+        
+        &::before {
+          color: #18e1b4;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: h.rem(149) 0 h.rem(183);
+
+    .quote-card {
+
+      .title {
+        font-size: h.rem(30);
+        margin-bottom: h.rem(25);
+        gap: h.rem(22);
+
+        i {
+          font-size: h.rem(26);
+        }
+      }
+    }
+  }
+}
