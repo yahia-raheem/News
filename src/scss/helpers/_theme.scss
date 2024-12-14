@@ -85,7 +85,7 @@
   }
 }
 
-@mixin saudiTitle() {
+@mixin saudiTitle($which-is-colored: "last") {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,9 +95,16 @@
     font-size: m.rem(16);
     font-weight: 500;
 
-    &:last-of-type {
-      color: #18e1b4;
+    @if ($which-is-colored == "last") {
+      &:last-of-type {
+        color: #18e1b4;
+      }
+    } @else {
+      &:first-of-type {
+        color: #18e1b4;
+      }
     }
+
   }
 
   i {
