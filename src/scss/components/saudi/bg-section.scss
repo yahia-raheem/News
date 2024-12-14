@@ -1,0 +1,16 @@
+section.bg-section {
+  aspect-ratio: 7/10;
+  width: 100%;
+
+  .gradient {
+    background: linear-gradient(180deg, rgba(19, 17, 30, 0) 0%, #03152d 75%);
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: h.rem(123);
+  }
+
+  @media screen and (min-width: 992px) {
+    aspect-ratio: 1920/1005;
+  }
+}
