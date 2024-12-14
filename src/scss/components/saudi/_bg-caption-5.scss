@@ -1,0 +1,38 @@
+section.bg-caption-5 {
+  padding: h.rem(40) 0;
+
+  .quote-card {
+    text-align: center;
+    border-radius: 16px;
+    padding: h.rem(32) h.rem(25);
+
+    h5 {
+      font-size: h.rem(14);
+      font-weight: 500;
+      margin-bottom: h.rem(16);
+      color: #18e1b4;
+    }
+
+    p:not(:last-of-type) {
+      margin-bottom: h.rem(16);
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: h.rem(124) 0;
+
+    .quote-card {
+      border-radius: 16px;
+      padding: h.rem(64) h.rem(56);
+
+      h5 {
+        font-size: h.rem(26);
+        margin-bottom: h.rem(30);
+      }
+
+      p:not(:last-of-type) {
+        margin-bottom: h.rem(30);
+      }
+    }
+  }
+}
