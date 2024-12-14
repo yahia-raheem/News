@@ -84,3 +84,39 @@
     gap: m.rem(14);
   }
 }
+
+@mixin saudiTitle($which-is-colored: "last") {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: m.rem(40);
+
+  h5 {
+    font-size: m.rem(16);
+    font-weight: 500;
+
+    @if ($which-is-colored == "last") {
+      &:last-of-type {
+        color: #18e1b4;
+      }
+    } @else {
+      &:first-of-type {
+        color: #18e1b4;
+      }
+    }
+
+  }
+
+  i {
+    display: inline-table;
+  }
+
+  @media screen and (min-width: 992px) {
+    margin-bottom: m.rem(77);
+
+    h5 {
+      font-size: m.rem(30);
+      line-height: m.rem(42);
+    }
+  }
+}

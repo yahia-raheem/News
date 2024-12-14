@@ -1,0 +1,40 @@
+section.bg-caption-4 {
+  padding: h.rem(40) 0 h.rem(40);
+
+  .sec-title {
+    font-size: h.rem(18);
+    font-weight: 700;
+    display: flex;
+    gap: h.rem(12);
+    margin-bottom: h.rem(20);
+
+    i {
+      font-size: h.rem(16);
+    }
+  }
+
+  p {
+    font-size: h.rem(14);
+    font-weight: 500;
+    margin-bottom: h.rem(20);
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: h.rem(187) 0 h.rem(398);
+
+    .sec-title {
+      font-size: h.rem(32);
+      gap: h.rem(21);
+      margin-bottom: h.rem(43);
+
+      i {
+        font-size: h.rem(26);
+      }
+    }
+
+    p {
+      margin-bottom: h.rem(40);
+      font-size: h.rem(24);
+    }
+  }
+}
