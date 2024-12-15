@@ -1,0 +1,99 @@
+section.bg-caption-6 {
+  padding-top: h.rem(35);
+  padding-bottom: h.rem(150);
+
+  .quote-card {
+    padding: h.rem(18) h.rem(20);
+    border-radius: 8px;
+
+    h5 {
+      font-size: h.rem(18);
+      font-weight: 700;
+      margin-bottom: h.rem(8);
+      color: #18e1b4;
+    }
+
+    p:not(:last-of-type) {
+      margin-bottom: h.rem(16);
+    }
+  }
+
+  .solid-bg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: h.rem(50);
+    background-color: #03152d;
+  }
+
+  .gradient {
+    background: linear-gradient(180deg, rgba(19, 17, 30, 0) 0%, #03152d 75%);
+    position: absolute;
+    bottom: h.rem(50);
+    width: 100%;
+    height: h.rem(150);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    .btn {
+      display: flex;
+      gap: h.rem(8);
+      align-items: center;
+      justify-content: center;
+      padding: h.rem(14);
+      font-size: h.rem(14);
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    padding-top: h.rem(73);
+    padding-bottom: h.rem(288);
+
+    .quote-card {
+      padding: h.rem(32) h.rem(40);
+      border-radius: 8px;
+
+      h5 {
+        font-size: h.rem(32);
+        font-weight: 700;
+        margin-bottom: h.rem(16);
+        color: #18e1b4;
+      }
+
+      p:not(:last-of-type) {
+        margin-bottom: h.rem(30);
+      }
+    }
+
+    .solid-bg {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: h.rem(100);
+      background-color: #03152d;
+    }
+
+    .gradient {
+      background: linear-gradient(180deg, rgba(19, 17, 30, 0) 0%, #03152d 75%);
+      position: absolute;
+      bottom: h.rem(100);
+      width: 100%;
+      height: h.rem(282);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+
+      .btn {
+        display: flex;
+        gap: h.rem(12);
+        align-items: center;
+        justify-content: center;
+        padding: h.rem(20);
+        font-size: h.rem(20);
+      }
+    }
+  }
+}
