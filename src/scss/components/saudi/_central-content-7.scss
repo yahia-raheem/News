@@ -66,6 +66,10 @@ section.central-content-7 {
 
     .chart {
       margin-bottom: h.rem(81);
+
+      img {
+        max-width: h.rem(1035);
+      }
     }
 
     .owners-sec-title {
