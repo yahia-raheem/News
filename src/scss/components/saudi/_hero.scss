@@ -47,6 +47,14 @@ section.hero {
       font-size: h.rem(16);
       font-weight: 500;
     }
+
+    .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: h.rem(8);
+      font-size: h.rem(18);
+    }
   }
 
   .gradient {
@@ -67,15 +75,16 @@ section.hero {
 
     .content {
       padding: h.rem(30) h.rem(67);
-      gap: h.rem(20);
-      width: h.rem(930);
+      gap: h.rem(10);
+      width: h.rem(760);
 
       .prefix {
-        font-size: h.rem(46);
+        font-size: h.rem(38);
       }
 
       .title {
         font-size: h.rem(44);
+        font-weight: 800;
       }
 
       .suffix {
@@ -89,6 +98,11 @@ section.hero {
       p {
         font-size: h.rem(24);
         font-weight: 500;  
+      }
+
+      .btn {
+        gap: h.rem(12);
+        font-size: h.rem(24);
       }
     }
 
