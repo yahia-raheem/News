@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   findAndDoForEach(".animate.fade-in", _fadeIn);
   findAndDoForEach(".animate.scale", _scaleWithScroll);
   findAndDoForEach(".animate.typewriter", _typeWriterWrapper);
+  findAndDoForEach(".animate.counter", _counter);
 });
 
 /**
@@ -14,7 +15,7 @@ const _fadeIn = (el) => {
     (options) => {
       const hasDelay = options.element.getAttribute("data-delay");
       const forceDelay = options.element.getAttribute("data-force-delay");
-      if (hasDelay && (window.innerWidth >= 992 || forceDelay) ) {
+      if (hasDelay && (window.innerWidth >= 992 || forceDelay)) {
         setTimeout(() => {
           options.element.classList.add("visible");
         }, +hasDelay);
@@ -44,11 +45,11 @@ const _scaleWithScroll = (el) => {
 const _typeWriterWrapper = (el) => {
   elementObserver(
     (options) => {
-      _typeWriterInner(options.element)
+      _typeWriterInner(options.element);
     },
     { element: el }
   );
-}
+};
 
 /**
  * A function that scales images on zoom.
@@ -81,4 +82,31 @@ const _typeWriterInner = (el) => {
   } else {
     typewriter();
   }
+};
+
+/**
+ * Counts up from 0 to a target number
+ * @param {HTMLBaseElement} el
+ */
+const _counter = (el) => {
+  elementObserver(
+    (options) => {
+      const speed = options.element.dataset.speed ?? 1;
+      const countTo = parseFloat(options.element.dataset.countTo.replace(/,/g, ''));
+      const step = parseInt(options.element.dataset.step) ?? 100;
+      let count = 0;
+      if (countTo) {
+        const intervalId = setInterval(() => {
+          options.element.textContent = count.toLocaleString('en-US');
+          count = count + step;
+  
+          if (count > countTo) {
+            options.element.textContent = countTo.toLocaleString('en-US');
+            clearInterval(intervalId);
+          }
+        }, speed);
+      }
+    },
+    { element: el }
+  );
 };
