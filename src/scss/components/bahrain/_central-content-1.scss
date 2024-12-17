@@ -166,8 +166,9 @@ section.central-content {
         }
         .dots {
           width: h.rem(230);
-          inset-inline-start: 40%;
+          inset-inline-start: 35% #{"/*rtl:40%*/"};
           top: 82%;
+          transform: rotateY(180deg) #{"/*rtl:none*/"};
         }
       }
 

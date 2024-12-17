@@ -2,24 +2,17 @@
 <!-- {
         "bgImage": image, 
     } -->
-<section class="bg-caption-1">
+<section class="bg-caption-1 p-small">
+    <img loading="lazy" src="@@upperDecoration" alt="Decoration" class="decoration upper-decoration d-none d-lg-block">
     <img loading="lazy" src="@@bgImage" alt="background image" class="bg-image">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 offset-lg-6 col-12">
+            <div class="col-lg-7 col-12">
                 <div class="quote-card animate fade-in">
                     @@include('./parts/quote-cards-en.part.html')
-
                 </div>
             </div>
         </div>
     </div>
-    <footer>
-        <div class="container">
-            @@include('./parts/suffix-en.part.html')
-        </div>
-    </footer>
-    <div class="decoration d-none d-lg-block">
-        <img loading="lazy" src="@@upperDecoration" alt="Decoration">
-    </div>
+    <div class="gradient"></div>
 </section>
