@@ -1,0 +1,39 @@
+<!-- Hero Section -->
+<!-- {
+        "bgVid": image, 
+        "cardTitle": string, 
+        "cardText": string, 
+        "cardSuffix": string, 
+        "footerText": string, 
+        "buttonText": string, 
+        "buttonLink": string
+    } -->
+    <section class="hero">
+        <video autoplay muted loop class="bg-image">
+            <source src="@@bgVid" type="video/mp4">
+            Your browser doesn't support the video tag
+        </video>
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+            <div class="spacer"></div>
+            <div class="card d-flex flex-column justify-content-center align-items-center animate fade-in">
+                <div class="header">
+                    <p>@@cardTitle</p>
+                </div>
+                <div class="content">
+                    <h4>@@cardText</h4>
+                </div>
+                <div class="suffix">
+                    <span>@@cardSuffix</span>
+                </div>
+            </div>
+            <div class="spacer"></div>
+            <footer class="d-flex flex-column justify-content-center align-items-center animate fade-in">
+                <p>@@footerText</p>
+                <a href="@@buttonLink" class="btn btn-primary">
+                    <span>@@buttonText</span>
+                    <span class="icon-arrow-right"></span>
+                </a>
+            </footer>
+        </div>
+        <div class="gradient"></div>
+    </section>

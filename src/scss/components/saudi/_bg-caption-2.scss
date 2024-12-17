@@ -7,6 +7,23 @@ section.bg-caption-2 {
     top: 0;
   }
 
+  .title-container {
+    text-align: center;
+    margin-bottom: h.rem(25);
+    margin-top: h.rem(25);
+
+    h5 {
+      font-size: h.rem(18);
+      font-weight: 500;
+      color: #18e1b4;
+    }
+
+    p {
+      font-size: h.rem(16);
+      font-weight: 500;
+    }
+  }
+
   .media-container {
     max-width: 100%;
     margin-bottom: h.rem(45);
@@ -26,6 +43,19 @@ section.bg-caption-2 {
   @media screen and (min-width: 992px) {
     padding-top: h.rem(205);
     padding-bottom: h.rem(205);
+
+    .title-container {
+      margin-top: h.rem(50);
+      margin-bottom: h.rem(50);
+
+      h5 {
+        font-size: h.rem(32);
+      }
+
+      p {
+        font-size: h.rem(30);
+      }
+    }
 
     .media-container {
       width: h.rem(627);
