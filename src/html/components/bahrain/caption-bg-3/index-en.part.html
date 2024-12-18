@@ -1,0 +1,27 @@
+<!-- Caption-bg-2 -->
+<!-- {
+        "bgImage": image, 
+        "upperDecoration": image
+    } -->
+<section class="bg-caption-2">
+    <div class="decoration d-none d-lg-block">
+        <img loading="lazy" src="@@upperDecoration" alt="Decoration">
+    </div>
+    <img loading="lazy" src="@@bgImage" alt="background image" class="bg-image">
+
+    <div class="container d-flex d-lg-none">
+        <div class="row">
+            <div class="col-12">
+                @@include('./parts/en/quote-card-en.part.html')
+            </div>
+            <div class="col-12">
+                @@include('./parts/en/quote-card-2-en.part.html')
+            </div>
+        </div>
+    </div>
+    <div class="d-none d-lg-block">
+        @@include('./parts/en/quote-card-en.part.html')
+        @@include('./parts/en/quote-card-2-en.part.html')
+    </div>
+
+</section>
