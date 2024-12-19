@@ -114,6 +114,7 @@
 
       img {
         width: h.rem(550);
+        transform: rotateY(180deg) #{"/*rtl:none*/"};
       }
     }
 
