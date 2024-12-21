@@ -74,9 +74,7 @@ section.hero {
     height: unset;
 
     .content {
-      padding: h.rem(30) h.rem(67);
-      gap: h.rem(10);
-      width: h.rem(760);
+      min-width: unset #{"/*rtl:760px*/"};
 
       .prefix {
         font-size: h.rem(38);
