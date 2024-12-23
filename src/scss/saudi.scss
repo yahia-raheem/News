@@ -152,3 +152,75 @@ img {
   position: fixed;
   z-index: -1;
 }
+
+#map-container {
+  position: relative;
+  display: inline-block;
+}
+#map {
+  width: 100%;
+  height: auto;
+}
+.icon-pin {
+  cursor: pointer;
+  display: block;
+}
+.popup {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid black;
+  padding: 20px; /* Add 20px padding */
+  z-index: 10;
+  transform: translate(-50%, -100%);
+  color: black;
+  border-radius: 8px; /* Add border radius of 8px */
+  opacity: 0; /* Start with opacity 0 */
+  animation: mapFadeOut 0.3s ease-in-out;
+  animation-fill-mode: forwards;
+  top: -10px;
+
+  @media screen and (min-width: 992px) {
+    width: 200px;    
+  }
+}
+
+.icon-pin:hover .popup {
+  display: block;
+  opacity: 1; /* Fade in by setting opacity to 1 */
+  animation: mapFadeIn 0.3s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+i.icon-pin::before {
+  color: red;
+  font-size: 30px;
+}
+
+@keyframes mapFadeIn {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes mapFadeOut {
+  0% {
+    opacity: 1;
+    display: block;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}
