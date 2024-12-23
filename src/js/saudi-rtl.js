@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const pinElement = document.createElement("i");
     pinElement.classList.add("icon-pin");
     pinElement.style.position = "absolute";
-    pinElement.style.left = `${pin.x}%`;
+    pinElement.style.insetInlineStart = `${pin.x}%`;
     pinElement.style.top = `${pin.y}%`;
 
     const popup = document.createElement("div");
