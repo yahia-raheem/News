@@ -25,6 +25,9 @@ section.central-content-5 {
 
   .title-container {
     @include h.saudiTitle();
+  }
+  
+  .title-style-4 {
     margin-bottom: h.rem(25);
   }
 
@@ -119,6 +122,10 @@ section.central-content-5 {
     }
 
     .title-container {
+      margin-bottom: h.rem(56);
+    }
+
+    .title-style-4 {
       margin-bottom: h.rem(56);
     }
 
