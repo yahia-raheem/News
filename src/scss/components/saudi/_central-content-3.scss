@@ -80,6 +80,10 @@ section.central-content-3 {
     }
   }
 
+  .title-style-4 {
+    margin-bottom: h.rem(40);
+  }
+
   @media screen and (min-width: 992px) {
     padding: h.rem(142) 0 h.rem(170);
 
@@ -134,6 +138,10 @@ section.central-content-3 {
         line-height: h.rem(42);
         margin-bottom: h.rem(20);
       }
+    }
+
+    .title-style-4 {
+      margin-bottom: h.rem(77);
     }
   }
 }

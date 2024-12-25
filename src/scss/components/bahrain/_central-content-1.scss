@@ -9,6 +9,10 @@ section.central-content {
     z-index: 1;
   }
 
+  .title-style-4 {
+    margin-bottom: 20px;
+  }
+
   &.mb-big {
     padding-bottom: h.rem(200);
   }
@@ -125,6 +129,10 @@ section.central-content {
     .icon-card {
       margin-bottom: h.rem(167);
       margin-top: h.rem(60);
+    }
+
+    .title-style-4 {
+      margin-bottom: 40px;
     }
 
     .quote-card {

@@ -24,6 +24,16 @@ section.bg-caption-2 {
     }
   }
 
+  .title-style-4 {
+    margin-top: h.rem(25);
+  }
+  
+  .suffix {
+    font-size: h.rem(16);
+    font-weight: 500;
+    margin-bottom: h.rem(25);
+  }
+
   .media-container {
     max-width: 100%;
     margin-bottom: h.rem(45);
@@ -55,6 +65,15 @@ section.bg-caption-2 {
       p {
         font-size: h.rem(30);
       }
+    }
+
+    .title-style-4 {
+      margin-top: h.rem(50);
+    }
+    
+    .suffix {
+      font-size: h.rem(16);
+      margin-bottom: h.rem(50);
     }
 
     .media-container {

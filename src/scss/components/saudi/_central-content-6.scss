@@ -27,6 +27,14 @@ section.central-content-6 {
       font-weight: 500;
     }
   }
+  .title-style-4 {
+    margin-top: h.rem(70);
+  }
+
+  .suffix {
+    margin-bottom: h.rem(25);
+    text-align: center;
+  }
 
   @media screen and (min-width: 992px) {
     padding-bottom: h.rem(148);
@@ -51,6 +59,14 @@ section.central-content-6 {
       p {
         font-size: h.rem(30);
       }
+    }
+
+    .title-style-4 {
+      margin-top: h.rem(160);
+    }
+  
+    .suffix {
+      margin-bottom: h.rem(50);
     }
   }
 }
