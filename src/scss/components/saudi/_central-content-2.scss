@@ -36,6 +36,10 @@ section.central-content-2 {
     margin-bottom: h.rem(30);
   }
 
+  .suffix {
+    text-align: center;
+  }
+
   @media screen and (min-width: 992px) {
     padding-top: h.rem(80);
     padding-bottom: h.rem(76);
