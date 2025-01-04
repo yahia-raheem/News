@@ -1,0 +1,105 @@
+section.central-content-2 {
+  padding: h.rem(30) 0;
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .sec-intro {
+    gap: h.rem(18);
+    margin-bottom: h.rem(50);
+  }
+
+  .suggested-solutions {
+    h5 {
+      font-size: h.rem(16);
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: h.rem(9);
+      margin-bottom: h.rem(16);
+      color: #f2c94c;
+      font-weight: 800;
+    }
+
+    .solutions {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: h.rem(24);
+      margin-top: h.rem(24);
+      margin-bottom: h.rem(24);
+
+      .solution {
+        border-radius: 4px;
+        padding: h.rem(12) h.rem(14);
+        background-color: #18e1b4;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 8px;
+        font-size: h.rem(18);
+        font-weight: 800;
+        color: #212121;
+
+        span.wrapper {
+          width: h.rem(25);
+          height: h.rem(25);
+          border-radius: h.rem(25);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          font-size: h.rem(20);
+          font-weight: 800;
+          background-color: #09b28c;
+          position: relative;
+
+          span {
+            position: relative;
+            top: 3px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: 0 0 h.rem(95);
+
+    .sec-intro {
+      gap: h.rem(36);
+      margin-bottom: h.rem(109);
+    }
+
+    .suggested-solutions {
+      h5 {
+        font-size: h.rem(26);
+        gap: h.rem(18);
+        margin-bottom: h.rem(28);
+      }
+
+      .solutions {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: h.rem(24);
+        margin-top: h.rem(24);
+        margin-bottom: h.rem(24);
+
+        .solution {
+          padding: h.rem(16) h.rem(24);
+          gap: 8px;
+          font-size: h.rem(22);
+          justify-content: center;
+
+          span.wrapper {
+            width: h.rem(35);
+            height: h.rem(35);
+            border-radius: h.rem(35);
+            font-size: h.rem(24);
+          }
+        }
+      }
+    }
+  }
+}

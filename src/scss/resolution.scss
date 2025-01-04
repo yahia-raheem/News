@@ -1,0 +1,214 @@
+@use "helpers" as h;
+@use "./base/variables" as v;
+@use "./base/typography" as t;
+
+@import "./base/helpers";
+@import "./base/font-face";
+@import "./base/classes";
+@import "./base/sidebar";
+
+// Bootstrap customization
+@import "../../node_modules/bootstrap/scss/functions";
+
+@import "./base/bootstrap-cust";
+
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/variables-dark";
+
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/reboot";
+
+@import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "../../node_modules/bootstrap/scss/nav";
+@import "../../node_modules/bootstrap/scss/navbar";
+@import "../../node_modules/bootstrap/scss/buttons";
+
+body {
+  position: relative;
+  z-index: -3;
+}
+
+// Components
+@import "./components/animate";
+@import "./components/header";
+@import "./components/loader";
+@import "./components/quote-card";
+@import "./components/media-container";
+@import "./components/title-img";
+@import "./components/title_styles";
+@import "./components/table";
+
+// page components
+@import "./components/resolution/hero";
+@import "./components/resolution/central-content-1";
+@import "./components/resolution/central-content-2";
+@import "./components/resolution/central-content-3";
+
+a {
+  text-decoration: none !important;
+
+  &.btn {
+    padding: h.rem(12) h.rem(14);
+  }
+
+  @media screen and (min-width: 992px) {
+    &.btn {
+      line-height: 1;
+      padding: 1rem;
+    }
+  }
+}
+
+body {
+  background-color: #03152d;
+  text-align: justify;
+
+  p {
+    font-size: h.rem(16);
+    font-weight: 500;
+
+    @media screen and (min-width: 992px) {
+      font-size: h.rem(24);
+    }
+  }
+}
+
+p.content {
+  font-size: h.rem(18);
+  font-weight: 400;
+  margin-bottom: h.rem(12);
+
+  @media screen and (min-width: 992px) {
+    font-size: h.rem(24);
+    margin-bottom: h.rem(20);
+  }
+}
+
+span.icon-quote {
+  display: inline-table;
+}
+
+.decoration {
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+  inset-inline-start: 0;
+  overflow: hidden;
+
+  img {
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.chart-container {
+  width: h.rem(773);
+  max-width: 100%;
+}
+
+.flourish-credit {
+  display: none;
+}
+
+.page-bg {
+  position: fixed;
+  z-index: -1;
+}
+
+#map-container {
+  position: relative;
+  display: inline-block;
+}
+#map {
+  width: 100%;
+  height: auto;
+}
+.icon-pin {
+  cursor: pointer;
+  display: block;
+}
+.popup {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid black;
+  padding: 20px; /* Add 20px padding */
+  z-index: 10;
+  transform: translate(-50%, -100%);
+  color: black;
+  border-radius: 8px; /* Add border radius of 8px */
+  opacity: 0; /* Start with opacity 0 */
+  animation: mapFadeOut 0.3s ease-in-out;
+  animation-fill-mode: forwards;
+  top: -10px;
+
+  @media screen and (min-width: 992px) {
+    width: 200px;    
+  }
+}
+
+.icon-pin:hover .popup {
+  display: block;
+  opacity: 1; /* Fade in by setting opacity to 1 */
+  animation: mapFadeIn 0.3s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+i.icon-pin::before {
+  color: red;
+  font-size: 30px;
+}
+
+@keyframes mapFadeIn {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes mapFadeOut {
+  0% {
+    opacity: 1;
+    display: block;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}
