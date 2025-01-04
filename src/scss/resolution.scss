@@ -38,11 +38,13 @@ body {
 @import "./components/media-container";
 @import "./components/title-img";
 @import "./components/title_styles";
+@import "./components/table";
 
 // page components
 @import "./components/resolution/hero";
 @import "./components/resolution/central-content-1";
 @import "./components/resolution/central-content-2";
+@import "./components/resolution/central-content-3";
 
 a {
   text-decoration: none !important;
