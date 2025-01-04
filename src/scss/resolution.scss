@@ -41,6 +41,7 @@ body {
 
 // page components
 @import "./components/resolution/hero";
+@import "./components/resolution/central-content-1";
 
 a {
   text-decoration: none !important;
@@ -63,7 +64,7 @@ body {
 
   p {
     font-size: h.rem(16);
-    font-weight: 400;
+    font-weight: 500;
 
     @media screen and (min-width: 992px) {
       font-size: h.rem(24);
