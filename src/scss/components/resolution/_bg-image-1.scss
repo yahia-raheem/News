@@ -1,0 +1,43 @@
+section.bg-image-1 {
+  padding: h.rem(40) 0;
+
+  .quote-card {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    h5 {
+      color: #18e1b4;
+      font-size: h.rem(12);
+      font-weight: 800;
+    }
+
+    p {
+      font-size: h.rem(12);
+      font-weight: 500;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: h.rem(84) 0;
+
+    .quote-card {
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      h5 {
+        color: #18e1b4;
+        font-size: h.rem(24);
+        font-weight: 800;
+      }
+
+      p {
+        font-size: h.rem(24);
+        font-weight: 500;
+      }
+    }
+  }
+}

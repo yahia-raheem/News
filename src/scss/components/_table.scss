@@ -29,6 +29,7 @@
       gap: h.rem(10);
       border: 1px solid #464646;
       padding: h.rem(8);
+      background-color: #011127;
 
       .table-cell {
         display: flex;
@@ -47,6 +48,8 @@
         .icon {
           width: h.rem(50);
           height: h.rem(50);
+          min-width: h.rem(50);
+          min-height: h.rem(50);
           border-radius: h.rem(50);
           display: none;
           justify-content: center;
@@ -122,6 +125,8 @@
           .icon {
             width: h.rem(105);
             height: h.rem(105);
+            min-width: h.rem(105);
+            min-height: h.rem(105);
             border-radius: h.rem(105);
             display: flex;
           }
