@@ -108,7 +108,7 @@
     <section class="central-content-2">
     <img src="webp/resolution/water-drops-bg.webp" loading="lazy" alt="water drops" class="bg-image">
     <div class="container">
-        <div class="sec-intro d-flex flex-column">
+        <div class="sec-intro d-flex flex-column animate fade-in">
     <p>
         شهدت أيام المؤتمر زخمًا كبيرًا، والكثير من الأوراق العلمية التي قدمها الباحثون، سعيًا لإيجاد حلول فعّالة لمشكلة
         المحلول الملحي الناجم عن عمليات التحلية. غير أن هذه الحلول، وفق ما رصدته "مواطن" وما أكده خبراء، ظلت حبيسة
@@ -126,12 +126,12 @@
 </div>
 
 <div class="suggested-solutions">
-    <h5>
+    <h5 class="animate fade-in d-start">
         <i class="icon-star"></i>
         حلول مقترحة
     </h5>
 
-    <p>
+    <p class="animate fade-in">
         وفقًا لقاعدة بيانات بنتها "مواطن" عبر لقاءاتها المفتوحة مع الباحثين والعلماء، وبالاستعانة بورقة بحثية منشورة عام
         ٢٠٢٣ بمجلة "الموارد المائية والصناعة"، بعنوان "حوكمة تحلية المياه وإدارة المحلول الملحي: مراجعة وتنظيم القضايا
         التنظيمية والاجتماعية والتقنية"؛ فهناك سبع حلول مقترحة لحل أزمة المحلول الملحي، تندرج تحت ثلاثة قطاعات أساسية،
@@ -139,19 +139,19 @@
     </p>
 
     <div class="solutions">
-        <div class="solution">
+        <div class="solution animate fade-in">
             <span class="wrapper">
                 <span>1</span>
             </span>
             تطوير البنية التحتية
         </div>
-        <div class="solution">
+        <div class="solution animate fade-in" data-delay="200">
             <span class="wrapper">
                 <span>2</span>
             </span>
             إعادة استخدام المحلول نفسه
         </div>
-        <div class="solution">
+        <div class="solution animate fade-in" data-delay="400">
             <span class="wrapper">
                 <span>3</span>
             </span>
@@ -159,7 +159,7 @@
         </div>
     </div>
 
-    <p>
+    <p class="animate fade-in">
         ولكن ورغم تعدد الخيارات، تواجه هذه الحلول تحديات كبيرة على أرض الواقع، تتنوع بين القيود القانونية واللوائح
         التنظيمية، والتكاليف المرتفعة، وصعوبة الوصول إلى التكنولوجيا اللازمة لتطبيقها.
     </p>
@@ -168,15 +168,16 @@
 </section>
     
     <section class="central-content-3">
+    <div class="gradient"></div>
     <div class="container">
-        <h3 class="decorative-title">حلول أزمة المحلول الملحي</h3>
+        <h3 class="decorative-title animate fade-in">حلول أزمة المحلول الملحي</h3>
 <div class="table-group">
     <h5 class="prefix">
         <span>أولاً:</span>
         الحلول القائمة على البنية التحتية
     </h5>
 
-    <div class="table">
+    <div class="table animate fade-in">
         <div class="header">
             الاستخدام في قطاعات أخرى
         </div>
@@ -204,7 +205,7 @@
         <div class="table-row">
     <div class="table-cell first">
         <div class="icon">
-            <img src="webp/resolution/ground.webp" loading="lazy" alt="icon">
+            <img src="webp/resolution/irrigate.webp" loading="lazy" alt="icon">
         </div>
         <div class="cell-content">
             <div class="tag">الاستخدام الزراعي</div>
@@ -222,9 +223,285 @@
         </div>
     </div>
 </div>
-        
+    </div>
+
+    <div class="table animate fade-in">
+        <div class="header">
+            التخلص الآمن
+        </div>
+        <div class="table-row">
+    <div class="table-cell first">
+        <div class="icon">
+            <img src="webp/resolution/toxic-waste.webp" loading="lazy" alt="icon">
+        </div>
+        <div class="cell-content">
+            <div class="tag">تقنيات "عدم تصريف السوائل"</div>
+            <p>
+                تهدف إلى تحويل النفايات السائلة إلى مواد صلبة وإعادة استخدام المياه بشكل شبه كامل.
+            </p>
+        </div>
+    </div>
+    <div class="table-cell last">
+        <div class="cell-content">
+            <div class="tag alt">التحدي</div>
+            <p>
+                هذه التقنيات معقدة ومكلفة، وتستهلك الكثير من الطاقة.
+            </p>
+        </div>
     </div>
 </div>
+        <div class="table-row">
+    <div class="table-cell first">
+        <div class="icon">
+            <img src="webp/resolution/ground.webp" loading="lazy" alt="icon">
+        </div>
+        <div class="cell-content">
+            <div class="tag">الحقن في الطبقات الجوفية</div>
+            <p>
+                تصريف المحلول الملحي في آبار عميقة أو خزانات تحت الأرض.
+            </p>
+        </div>
+    </div>
+    <div class="table-cell last">
+        <div class="cell-content">
+            <div class="tag alt">التحدي</div>
+            <p>
+                مكلف وصعب التنفيذ بسبب خطر التسرب والتآكل.
+            </p>
+        </div>
+    </div>
+</div>
+        <div class="table-row">
+    <div class="table-cell first">
+        <div class="icon">
+            <img src="webp/resolution/water-pipe.webp" loading="lazy" alt="icon">
+        </div>
+        <div class="cell-content">
+            <div class="tag">التصريف في مناطق محددة</div>
+            <p>
+                تصريف المياه المالحة في مواقع منظمة تخضع لمعايير بيئية صارمة.
+            </p>
+        </div>
+    </div>
+    <div class="table-cell last">
+        <div class="cell-content">
+            <div class="tag alt">التحدي</div>
+            <p>
+                يتطلب تخطيطًا وتنظيمًا دقيقين.
+            </p>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+        <div class="table-group second-table-group">
+    <h5 class="prefix">
+        <span>ثانيًا:</span>
+        الحلول القائمة على إعادة استخدام المحلول الملحي
+    </h5>
+
+    <div class="table animate fade-in">
+        <div class="header">
+            إعادة الاستخدام واسترداد الموارد
+        </div>
+        <div class="table-row">
+    <div class="table-cell first">
+        <div class="icon">
+            <img src="webp/resolution/carbon-footprint.webp" loading="lazy" alt="icon">
+        </div>
+        <div class="cell-content">
+            <div class="tag">احتجاز الكربون</div>
+            <p>
+                استخدام المحلول الملحي في تخزين الكربون والحد من انبعاثاته.
+            </p>
+        </div>
+    </div>
+    <div class="table-cell last">
+        <div class="cell-content">
+            <div class="tag alt">التحدي</div>
+            <p>
+                قد يتطلب تقنيات مكلفة وتجريبية.
+            </p>
+        </div>
+    </div>
+</div>
+        <div class="table-row">
+    <div class="table-cell first">
+        <div class="icon">
+            <img src="webp/resolution/excavator.webp" loading="lazy" alt="icon">
+        </div>
+        <div class="cell-content">
+            <div class="tag">استخراج المعادن والأملاح</div>
+            <p>
+                استرداد معادن ثمينة مثل الليثيوم أو المغنيسيوم.
+            </p>
+        </div>
+    </div>
+    <div class="table-cell last">
+        <div class="cell-content">
+            <div class="tag alt">التحدي</div>
+            <p>
+                معظم التقنيات غير جاهزة للتطبيق التجاري وتحتاج إلى دراسات إضافية.
+            </p>
+        </div>
+    </div>
+</div>
+    </div>
+
+    <div class="table animate fade-in">
+        <div class="header">
+            استرداد الطاقة
+        </div>
+        <div class="table-row">
+    <div class="table-cell first">
+        <div class="icon">
+            <img src="webp/resolution/flash.webp" loading="lazy" alt="icon">
+        </div>
+        <div class="cell-content">
+            <div class="tag">استغلال الطاقة</div>
+            <p>
+                استغلال الطاقة الناتجة عن اختلاف تركيز الأملاح (تدرج الملوحة).
+            </p>
+        </div>
+    </div>
+    <div class="table-cell last">
+        <div class="cell-content">
+            <div class="tag alt">التحدي</div>
+            <p>
+                هذه التقنيات مكلفة وضعيفة الأداء حاليًا.
+            </p>
+        </div>
+    </div>
+</div>
+    </div>
+
+    <div class="table animate fade-in">
+        <div class="header">
+            معالجة المحلول الملحي قبل التخلص منه
+        </div>
+        <div class="table-row">
+    <div class="table-cell first">
+        <div class="icon">
+            <img src="webp/resolution/water-valve.webp" loading="lazy" alt="icon">
+        </div>
+        <div class="cell-content">
+            <div class="tag">التبخير في البرك</div>
+            <p>
+                جمع الأملاح بعد تبخر المياه في برك مخصصة.
+            </p>
+        </div>
+    </div>
+    <div class="table-cell last">
+        <div class="cell-content">
+            <div class="tag alt">التحدي</div>
+            <p>
+                قد يلوث المياه الجوفية ويتطلب مساحات كبيرة.
+            </p>
+        </div>
+    </div>
+</div>
+        <div class="table-row">
+    <div class="table-cell first">
+        <div class="icon">
+            <img src="webp/resolution/search.webp" loading="lazy" alt="icon">
+        </div>
+        <div class="cell-content">
+            <div class="tag">التخفيف بالمزج</div>
+            <p>
+                خلط المحلول الملحي بمياه البحر قبل تصريفه.
+            </p>
+        </div>
+    </div>
+    <div class="table-cell last">
+        <div class="cell-content">
+            <div class="tag alt">التحدي</div>
+            <p>
+                يقلل من التأثير البيئي، ولكنه لا يحل مشكلة الملوحة بالكامل.
+            </p>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+        <div class="table-group second-table-group">
+    <h5 class="prefix">
+        <span>ثالثًا:</span>
+     التدخلات القائمة على المحطات
+    </h5>
+
+    <div class="table animate fade-in">
+        <div class="header">
+            زيادة كفاءة استرداد المياه
+        </div>
+        <div class="table-row">
+    <div class="table-cell first">
+        <div class="icon">
+            <img src="webp/resolution/water-drop.webp" loading="lazy" alt="icon">
+        </div>
+        <div class="cell-content">
+            <div class="tag">تحسين تقنيات التحلية</div>
+            <p>
+                لزيادة كمية المياه المحلاة المستخرجة، وتقليل كمية المحلول الملحي الناتج.
+            </p>
+        </div>
+    </div>
+    <div class="table-cell last">
+        <div class="cell-content">
+            <div class="tag alt">التحدي</div>
+            <p>
+                يتطلب تقنيات جديدة أو تعديلات مكلفة على الأنظمة الحالية.
+            </p>
+        </div>
+    </div>
+</div>
+        <div class="table-row">
+    <div class="table-cell first">
+        <div class="icon">
+            <img src="webp/resolution/radiation.webp" loading="lazy" alt="icon">
+        </div>
+        <div class="cell-content">
+            <div class="tag">تقليل المواد الكيميائية المستخدمة</div>
+            <p>
+                في عمليات التحلية واستبدالها ببدائل صديقة للبيئة.
+            </p>
+        </div>
+    </div>
+    <div class="table-cell last">
+        <div class="cell-content">
+            <div class="tag alt">التحدي</div>
+            <p>
+                يتطلب دراسة تأثير البدائل على جودة المياه المحلاة واستدامة النظام.
+            </p>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</section>
+
+    <section class="bg-image-1">
+    <img src="webp/global/abstract-1.webp" loading="lazy" class="bg-image">
+    <div class="container">
+        <div class="col-lg-6 col-12">
+            <div class="quote-card">
+                <h5>
+    يقول د. محمد السعيدي، أستاذ مشارك في كلية السياسات العامة بجامعة حمد بن خليفة، لـ "مواطن":
+</h5>
+<p>
+    "لطالما تساءلت عن سبب عدم حل مشكلة "المحلول الملحي"، ربما بسبب كلفتها، ولكن دول الخليج غنية بما يكفي لتحمل تلك
+    الكلفة، خاصة أنها ليست قضية معقدة من الناحية التقنية. وتأكدنا من ذلك عندما أنشئت محطات تحلية جديدة مثل محطة "أم
+    الحول"، بتقنيات أقل تلويثًا وقمنا بمراقبتها؛ فلم نجد هناك أي أثر لها؛ حيث استخدمت تقنيات مثل التبخر والتخفيف لمعالجة
+    المحلول الملحي، وجعل تأثيره أقل ضررًا. ولكن، تكمن المشكلة في عدم استثمار محطات التحلية في هذه التقنيات؛ خاصة في دول
+    الخليج التي تحتوي على أكبر نسبة من محطات التحلية في العالم.
+</p>
+<p>
+    ويضيف السعيدي: التحدي الأكبر يكمن في البنية التحتية الحالية، حيث يصعب إدخال تقنيات جديدة في المحطات الضخمة، دون
+    التأثير على إمدادات المياه. لذلك، تتطلب الحلول تدخلًا تدريجيًا وتحديثًا للبنية التحتية، مع التركيز على تحسين تقنيات
+    التخفيف.
+</p>
+            </div>
+        </div>
     </div>
 </section>
 
