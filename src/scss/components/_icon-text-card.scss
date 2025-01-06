@@ -1,0 +1,76 @@
+.text-icon-card {
+  display: flex;
+  justify-content: flex-start;
+
+  &:hover {
+    .content h5::before {
+      width: 100%;
+    }
+    .icon-container img {
+      transform: scale(1.1);
+    }
+  }
+
+  .icon-container {
+    width: 20%;
+    max-width: h.rem(240);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    img {
+      max-width: 80%;
+      max-height: 80%;
+      height: auto;
+      width: auto;
+      transition: all 0.5s;
+    }
+  }
+
+  .content {
+    width: 100%;
+    max-width: h.rem(900);
+
+    h5 {
+      font-size: h.rem(16);
+      font-weight: 800;
+      color: #18e1b4;
+      position: relative;
+      padding-bottom: h.rem(11);
+      margin-bottom: h.rem(11);
+      width: fit-content;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: h.rem(33);
+        height: 2px;
+        background-color: #18e1b4;
+        bottom: 0;
+        inset-inline-start: 0;
+        transition: all 0.5s;
+      }
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .icon-container {
+      max-width: h.rem(240);
+    }
+
+    .content {
+      width: 80%;
+      max-width: h.rem(900);
+
+      h5 {
+        font-size: h.rem(24);
+        padding-bottom: h.rem(11);
+        margin-bottom: h.rem(11);
+
+        &::before {
+          width: h.rem(63);
+        }
+      }
+    }
+  }
+}
