@@ -1,0 +1,30 @@
+section.bg-caption-2 {
+  padding: h.rem(40) 0;
+
+  .quote-card {
+    border-radius: 8px;
+
+    h5 {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      font-size: h.rem(16);
+      font-weight: 800;
+      gap: h.rem(10);
+      color: #f2c94c;
+      margin-bottom: h.rem(16);
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: h.rem(195) 0;
+
+    .quote-card {
+      h5 {
+        font-size: h.rem(26);
+        gap: h.rem(18);
+        margin-bottom: h.rem(30);
+      }
+    }
+  }
+}
