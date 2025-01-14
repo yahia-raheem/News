@@ -39,6 +39,22 @@ section.central-content-6 {
     margin-top: h.rem(16);
   }
 
+  .btn {
+    padding: h.rem(8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin-inline: auto;
+    margin-top: 30px;
+    gap: 6px;
+    font-size: h.rem(14);
+    font-weight: 800;
+    border-radius: 4px;
+    background-color: #18e1b4;
+    color: #055c53;
+  }
+
   @media screen and (min-width: 992px) {
     padding: h.rem(63) 0 h.rem(100);
 
@@ -69,6 +85,13 @@ section.central-content-6 {
 
     .last-para {
       margin-top: h.rem(24);
+    }
+
+    .btn {
+      padding: h.rem(16) h.rem(13);
+      gap: 13px;
+      font-size: h.rem(18);
+      margin-top: 60px;
     }
   }
 }
