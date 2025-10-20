@@ -1,64 +1,58 @@
 @font-face {
-  font-family: "Tajawal";
+  font-family: "Readex Pro";
+  font-weight: 200;
+  font-style: normal;
+  line-height: normal;
+  vertical-align: middle;
+  src: url("../../fonts/ReadexPro-ExtraLight.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "Readex Pro";
   font-weight: 300;
   font-style: normal;
   line-height: normal;
   vertical-align: middle;
-  src: url("../../fonts/Tajawal-ExtraLight.ttf")
+  src: url("../../fonts/ReadexPro-Light.ttf")
     format("truetype");
 }
-
 @font-face {
-  font-family: "Tajawal";
+  font-family: "Readex Pro";
   font-weight: 400;
   font-style: normal;
   line-height: normal;
   vertical-align: middle;
-  src: url("../../fonts/Tajawal-Light.ttf")
+  src: url("../../fonts/ReadexPro-Regular.ttf")
     format("truetype");
 }
+
 @font-face {
-  font-family: "Tajawal";
+  font-family: "Readex Pro";
   font-weight: 500;
   font-style: normal;
   line-height: normal;
   vertical-align: middle;
-  src: url("../../fonts/Tajawal-Regular.ttf")
+  src: url("../../fonts/ReadexPro-Medium.ttf")
     format("truetype");
 }
+
 @font-face {
-  font-family: "Tajawal";
+  font-family: "Readex Pro";
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
+  vertical-align: middle;
+  src: url("../../fonts/ReadexPro-SemiBold.ttf")
+    format("truetype");
+}
+
+
+@font-face {
+  font-family: "Readex Pro";
   font-weight: 700;
   font-style: normal;
   line-height: normal;
   vertical-align: middle;
-  src: url("../../fonts/Tajawal-Medium.ttf")
-    format("truetype");
-}
-@font-face {
-  font-family: "Tajawal";
-  font-weight: 800;
-  font-style: normal;
-  line-height: normal;
-  vertical-align: middle;
-  src: url("../../fonts/Tajawal-Bold.ttf")
-    format("truetype");
-}
-@font-face {
-  font-family: "DGBebo";
-  font-weight: 700;
-  font-style: normal;
-  line-height: normal;
-  vertical-align: middle;
-  src: url("../../fonts/DG BeboT.ttf")
-    format("truetype");
-}
-@font-face {
-  font-family: "DGBebo";
-  font-weight: 800;
-  font-style: normal;
-  line-height: normal;
-  vertical-align: middle;
-  src: url("../../fonts/DG Bebo B.ttf")
+  src: url("../../fonts/ReadexPro-Bold.ttf")
     format("truetype");
 }
