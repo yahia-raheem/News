@@ -41,6 +41,7 @@ body {
 
 // page components
 @import "./components/almaghara/hero";
+@import "./components/almaghara/bg-card-1";
 
 a {
   text-decoration: none !important;
@@ -64,6 +65,7 @@ body {
   p {
     font-size: h.rem(16);
     font-weight: 400;
+    color: v.$light-coffee;
 
     @media screen and (min-width: 992px) {
       font-size: h.rem(24);
@@ -179,4 +181,12 @@ img {
 i.icon-pin::before {
   color: red;
   font-size: 30px;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.z-1 {
+  z-index: 1;
 }
