@@ -1,0 +1,51 @@
+section.dynamic-content-1 {
+  padding: h.rem(40) 0 h.rem(40);
+
+  p {
+    font-weight: 300;
+    font-size: h.rem(18);
+    color: white;
+  }
+
+  .media-container {
+    height: h.rem(200);
+    margin: h.rem(35) auto;
+
+    video {
+      border: 8px solid #5c513d;
+    }
+  }
+
+  .card {
+    padding: h.rem(24) h.rem(20);
+    background-color: rgba(62, 73, 64, 0.7);
+    border: 2px solid #a18150;
+
+    p {
+      color: white;
+      font-weight: 400;
+      font-size: h.rem(16);
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: h.rem(88) 0 h.rem(100);
+
+    p {
+      font-size: h.rem(24);
+    }
+
+    .media-container {
+      height: h.rem(586);
+      margin: h.rem(96) auto;
+    }
+
+    .card {
+      padding: h.rem(32) h.rem(40);
+
+      p {
+        font-size: h.rem(24);
+      }
+    }
+  }
+}

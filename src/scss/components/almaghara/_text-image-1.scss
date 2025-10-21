@@ -1,0 +1,45 @@
+section.text-image-1 {
+  padding-top: h.rem(40);
+  padding-bottom: h.rem(40);
+  background-color: #020100;
+
+  .sec-image {
+    position: relative;
+    top: 0;
+    inset-inline-end: 0;
+    object-fit: contain;
+    width: auto;
+    opacity: 0.5;
+    margin-bottom: h.rem(20);
+  }
+
+  .container {
+    p {
+      font-size: h.rem(16);
+      margin-bottom: h.rem(18);
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    padding-top: h.rem(240);
+    padding-bottom: h.rem(240);
+
+    .sec-image {
+      position: absolute;
+      top: 0;
+      inset-inline-end: 0;
+      object-fit: contain;
+      width: auto;
+      height: 100%;
+      opacity: 0.5;
+      margin-bottom: 0;
+    }
+
+    .container {
+      p {
+        font-size: h.rem(24);
+        margin-bottom: h.rem(33);
+      }
+    }
+  }
+}

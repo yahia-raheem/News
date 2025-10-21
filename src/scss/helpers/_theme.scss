@@ -121,3 +121,11 @@
     }
   }
 }
+
+@mixin dashedline($height: 10px, $angle: 75deg, $color: white, $gap: 15px, $offset: 16) {
+  border-top: $height solid transparent;
+	border-image: $offset repeating-linear-gradient($angle, $color 0, $color 1px, transparent 0, transparent $gap,
+	              $color 0, $color 6px, transparent 0, transparent 6px);
+	
+	width: 100%;
+}
