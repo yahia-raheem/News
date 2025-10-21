@@ -1,0 +1,75 @@
+section.card-section-1 {
+  padding: h.rem(100) 0;
+
+  .gradient-top {
+    position: absolute;
+    top: -1px;
+    inset-inline-start: 0;
+    width: 100%;
+    height: h.rem(80);
+    z-index: 1;
+    background: linear-gradient(0deg, rgba(0, 24, 58, 0) 0%, #020000 100%);
+  }
+  .gradient-bottom {
+    position: absolute;
+    bottom: 0;
+    inset-inline-start: 0;
+    width: 100%;
+    height: h.rem(60);
+    transform: rotateZ(180deg);
+    z-index: 1;
+    background: linear-gradient(0deg, rgba(0, 24, 58, 0) 0%, #302112 100%);
+  }
+
+  .card {
+    padding: h.rem(20);
+    background-color: rgba(0, 0, 0, 0.8);
+
+    p {
+      margin-bottom: h.rem(16);
+      font-size: h.rem(18);
+      color: white;
+      font-weight: 300;
+
+      span {
+        color: #a18150;
+      }
+
+      &.last {
+        color: #a18150;
+        margin-bottom: 0;
+      }
+    }
+
+    .separator {
+      margin-bottom: h.rem(18);
+      @include h.dashedline(10px, -75deg, #5c513d, 6px, 32);
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: h.rem(212) 0;
+
+    .gradient-top {
+      height: h.rem(344);
+    }
+    .gradient-bottom {
+      height: h.rem(184);
+    }
+
+    .card {
+      max-width: h.rem(984);
+      padding: h.rem(40);
+
+      p {
+        margin-bottom: h.rem(24);
+        font-size: h.rem(24);
+      }
+
+      .separator {
+        margin-bottom: h.rem(24);
+        @include h.dashedline(18px, -75deg, #5c513d, 7px, 32);
+      }
+    }
+  }
+}
