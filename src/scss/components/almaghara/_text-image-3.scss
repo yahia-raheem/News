@@ -1,0 +1,38 @@
+section.text-image-3 {
+  padding: h.rem(40) 0 h.rem(40);
+
+  h6 {
+    color: v.$dark-orange;
+    font-size: h.rem(24);
+    font-weight: 500;
+    margin-bottom: h.rem(24);
+  }
+
+  p {
+    color: v.$mid-coffee;
+    font-weight: 400;
+    font-size: h.rem(18);
+
+    &:not(:last-of-type) {
+      margin-bottom: h.rem(20);
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: h.rem(160) 0 h.rem(128);
+
+    h6 {
+      font-size: h.rem(32);
+      margin-bottom: h.rem(32);
+    }
+
+    p {
+      font-size: h.rem(22);
+      line-height: h.rem(48);
+
+      &:not(:last-of-type) {
+        margin-bottom: h.rem(40);
+      }
+    }
+  }
+}
