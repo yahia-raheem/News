@@ -9,7 +9,15 @@ section.dynamic-content-1 {
 
   .media-container {
     height: h.rem(200);
+    aspect-ratio: 16/9;
     margin: h.rem(35) auto;
+
+    .icon-border {
+      font-size: 28px;
+      position: absolute;
+      top: -12px;
+      inset-inline-start: -6px;
+    }
 
     video {
       border: 8px solid #5c513d;
@@ -38,6 +46,12 @@ section.dynamic-content-1 {
     .media-container {
       height: h.rem(586);
       margin: h.rem(96) auto;
+
+      .icon-border {
+        font-size: 76px;
+        top: -32px;
+        inset-inline-start: -22px;
+      }
     }
 
     .card {
