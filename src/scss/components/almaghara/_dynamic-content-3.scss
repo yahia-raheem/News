@@ -1,0 +1,40 @@
+section.dynamic-content-3 {
+  padding: h.rem(60) 0 h.rem(24);
+
+  img.bg-image {
+    filter: brightness(0.6);
+  }
+
+  .timeline-container {
+    margin-top: h.rem(25);
+    margin-bottom: h.rem(40);
+  }
+
+  p {
+    font-size: h.rem(16);
+    font-weight: 300;
+    color: white;
+  }
+
+  .image-chart-container {
+    margin-top: h.rem(20);
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: h.rem(120) 0 h.rem(48);
+
+    .timeline-container {
+      margin-top: h.rem(52);
+      margin-bottom: h.rem(123);
+    }
+
+    p {
+      font-size: h.rem(22);
+      line-height: h.rem(48);
+    }
+
+    .image-chart-container {
+      margin-top: h.rem(41);
+    }
+  }
+}
