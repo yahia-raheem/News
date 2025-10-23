@@ -9,8 +9,8 @@ section.text-image-1 {
     inset-inline-end: 0;
     object-fit: contain;
     width: auto;
-    opacity: 0.5;
     margin-bottom: h.rem(20);
+    filter: brightness(35%);
   }
 
   .container {
@@ -31,7 +31,6 @@ section.text-image-1 {
       object-fit: contain;
       width: auto;
       height: 100%;
-      opacity: 0.5;
       margin-bottom: 0;
     }
 
