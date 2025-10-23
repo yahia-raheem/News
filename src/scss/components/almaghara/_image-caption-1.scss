@@ -1,0 +1,29 @@
+section.image-caption-1 {
+  background-color: #302112;
+  height: 60vh;
+  padding-top: h.rem(26);
+
+  .sec-img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  p {
+    color: white;
+    font-size: h.rem(18);
+    font-weight: 300;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 992px) {
+    padding-top: h.rem(46);
+    height: 100vh;
+
+    p {
+      font-size: h.rem(22);
+    }
+  }
+}
