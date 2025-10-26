@@ -1,0 +1,42 @@
+section.image-caption-2 {
+  padding-top: h.rem(80);
+  padding-bottom: h.rem(80);
+
+  .gradient-top {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #291f14 100%);
+    position: absolute;
+    top: -1px;
+    width: 100%;
+    height: h.rem(100);
+    z-index: 1;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: h.rem(18);
+    color: white;
+
+    &:not(:last-of-type) {
+      margin-bottom: h.rem(16);
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    height: 100vh;
+    padding-top: h.rem(176);
+    padding-bottom: 0;
+
+    .gradient-top {
+      height: h.rem(358);
+    }
+
+    p {
+      font-size: h.rem(22);
+      line-height: h.rem(40);
+
+      &:not(:last-of-type) {
+        margin-bottom: h.rem(24);
+      }
+    }
+  }
+}
