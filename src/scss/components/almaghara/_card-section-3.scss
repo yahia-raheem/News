@@ -1,0 +1,56 @@
+section.card-section-3 {
+  padding-top: h.rem(80);
+  padding-bottom: h.rem(80);
+
+  .gradient-bottom {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #291f14 100%);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: h.rem(100);
+    transform: rotateZ(180deg);
+  }
+
+  .gradient-top {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #291f14 100%);
+    position: absolute;
+    top: -1px;
+    width: 100%;
+    height: h.rem(100);
+    z-index: 1;
+  }
+
+  .card {
+    padding: h.rem(24);
+    background-color: #a18150;
+
+    p {
+      font-size: h.rem(18);
+      font-weight: 500;
+      color: white;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    height: 100vh;
+    padding-top: h.rem(205);
+    padding-bottom: 0;
+
+    .gradient-bottom {
+      height: h.rem(256);
+    }
+
+    .gradient-top {
+      height: h.rem(274);
+    }
+
+    .card {
+      padding: h.rem(32);
+
+      p {
+        font-size: h.rem(22);
+        line-height: h.rem(40);
+      }
+    }
+  }
+}
