@@ -1,0 +1,141 @@
+section.quote-slider-1 {
+  height: 100vh;
+
+  .gradient-bottom {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #291f14 100%);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: h.rem(80);
+    transform: rotateZ(180deg);
+  }
+
+  .slider-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+  }
+
+  .slide {
+    width: 100%;
+    height: 100vh; /* Each slide takes full viewport height */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    scroll-snap-align: start;
+  }
+
+  .slide.active {
+    opacity: 1;
+  }
+
+  .quote-card {
+    background-color: #3e4940f0;
+    padding: h.rem(18) h.rem(20);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: h.rem(12);
+    width: 100%;
+    max-width: h.rem(627);
+    margin-bottom: h.rem(80);
+
+    i {
+      display: inline-table;
+      font-size: h.rem(25);
+      margin-bottom: h.rem(6);
+    }
+
+    .quote-text {
+      font-weight: 300;
+      font-size: h.rem(16);
+      color: white;
+    }
+
+    .author {
+      font-weight: 500;
+      font-size: h.rem(14);
+      color: v.$titles-color;
+    }
+
+    .role {
+      font-weight: 300;
+      font-size: h.rem(14);
+      color: white;
+    }
+  }
+
+  .navigation-dots {
+    position: absolute; /* Keep dots visible */
+    right: 20px; /* Position them on the side */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    display: flex;
+    flex-direction: column; /* Stack them vertically */
+  }
+
+  .dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px 0; /* Adjust margin for vertical layout */
+  }
+
+  .dot.active {
+    background-color: white;
+  }
+
+  @media screen and (min-width: 992px) {
+
+    .gradient-bottom {
+      height: h.rem(201);
+    }
+
+    .quote-card {
+      padding: h.rem(35) h.rem(40);
+      gap: h.rem(22);
+      max-width: h.rem(627);
+      margin-bottom: h.rem(172);
+
+      i {
+        font-size: h.rem(58);
+        margin-bottom: h.rem(6);
+      }
+
+      .quote-text {
+        font-size: h.rem(22);
+        line-height: h.rem(36);
+      }
+
+      .author {
+        font-size: h.rem(18);
+      }
+
+      .role {
+        font-size: h.rem(18);
+      }
+    }
+
+    .navigation-dots {
+      right: 30px; /* Position them on the side */
+      top: 50%;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      margin: 10px 0; /* Adjust margin for vertical layout */
+    }
+  }
+}
