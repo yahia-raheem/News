@@ -1,0 +1,26 @@
+section.image-caption-4 {
+  padding: h.rem(40) 0;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  .card {
+    background-color: #302112e5;
+    padding: h.rem(12);
+    font-weight: 300;
+    font-size: h.rem(18);
+    color: v.$light-coffee;
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: h.rem(96) 0;
+    height: 100vh;
+
+    .card {
+      padding: h.rem(24);
+      font-size: h.rem(22);
+      line-height: h.rem(40);
+    }
+  }
+}

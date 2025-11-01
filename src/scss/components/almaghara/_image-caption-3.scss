@@ -1,0 +1,55 @@
+section.image-caption-3 {
+  padding-top: h.rem(80);
+  padding-bottom: h.rem(80);
+
+  .card {
+    background-color: v.$dark-roasted;
+    padding: h.rem(20);
+
+    p {
+      font-weight: 300;
+      font-size: h.rem(16);
+      color: white;
+      margin-bottom: h.rem(16);
+    }
+
+    a {
+      background-color: #a18150;
+      padding: h.rem(8);
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: h.rem(4);
+      color: white;
+
+      i {
+        font-size: h.rem(16);
+      }
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    padding-top: h.rem(297);
+    height: 100vh;
+
+    .card {
+      padding: h.rem(40);
+
+      p {
+        font-weight: 300;
+        line-height: h.rem(40);
+        font-size: h.rem(22);
+        margin-bottom: h.rem(30);
+      }
+
+      a {
+        padding: h.rem(14);
+        gap: h.rem(8);
+
+        i {
+          font-size: h.rem(22);
+        }
+      }
+    }
+  }
+}

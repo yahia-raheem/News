@@ -1,0 +1,44 @@
+section.dynamic-content-6 {
+  padding: h.rem(40) 0;
+
+  h3.sec-title {
+    font-weight: 400;
+    font-size: h.rem(24);
+    text-align: center;
+    color: v.$titles-color;
+    margin-bottom: h.rem(25);
+  }
+
+  table {
+    margin-bottom: h.rem(50);
+  }
+
+  p {
+    font-weight: 300;
+    font-size: h.rem(16);
+    color: white;
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: h.rem(90) 0;
+
+    h3.sec-title {
+      font-size: h.rem(34);
+      margin-bottom: h.rem(50);
+    }
+
+    table {
+      margin-bottom: h.rem(96);
+
+      th,
+      td {
+        width: h.rem(300);
+      }
+    }
+
+    p {
+      font-size: h.rem(22);
+      line-height: h.rem(40);
+    }
+  }
+}

@@ -1,0 +1,70 @@
+section.testimonials-1 {
+  padding-top: h.rem(80);
+  padding-bottom: h.rem(80);
+
+  .container-fluid {
+    max-width: 1670px;
+  }
+
+  .card {
+    max-width: h.rem(493);
+    padding: h.rem(16) h.rem(12);
+    border: 5px solid #a18150;
+    background-color: rgba(164, 153, 135, 0.6);
+    margin-bottom: h.rem(40);
+
+    i {
+      display: inline-table;
+      font-size: h.rem(30);
+      margin-bottom: h.rem(8);
+    }
+
+    p {
+      font-size: h.rem(16);
+      font-weight: 300;
+      color: white;
+
+      &:not(:last-of-type) {
+        margin-bottom: h.rem(20);
+      }
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    padding-top: h.rem(216);
+    padding-bottom: h.rem(851);
+
+    .container-fluid {
+      max-width: 1670px;
+    }
+
+    .card {
+      max-width: h.rem(493);
+      padding: h.rem(24) h.rem(16);
+      margin-bottom: 0;
+      background-color: rgba(164, 153, 135, 0.3);
+
+      i {
+        font-size: h.rem(58);
+        margin-bottom: h.rem(12);
+      }
+
+      p {
+        font-size: h.rem(22);
+        line-height: h.rem(40);
+
+        &:not(:last-of-type) {
+          margin-bottom: h.rem(40);
+        }
+      }
+
+      &.c-1 {
+        margin-top: h.rem(76);
+      }
+
+      &.c-3 {
+        margin-top: h.rem(200);
+      }
+    }
+  }
+}

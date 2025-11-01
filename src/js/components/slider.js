@@ -20,8 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
         // Get the ID of the intersecting slide (e.g., "slide-1")
         const currentSlideId = entry.target.id;
 
-        sliderContainer.scrollIntoView({ behavior: "smooth" });
-
         // Find the navigation dot that corresponds to this slide
         const activeDot = document.querySelector(
           `.dot[data-slide="${currentSlideId}"]`
