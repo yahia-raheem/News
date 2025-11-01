@@ -1,0 +1,19 @@
+section.banner-1 {
+  padding: h.rem(40) 0;
+  border-top: 5px solid #dce2e5;
+
+  p {
+    font-size: h.rem(16);
+    font-weight: 300;
+    color: white;
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: h.rem(94) 0;
+
+    p {
+      font-size: h.rem(22);
+      line-height: h.rem(40);
+    }
+  }
+}
