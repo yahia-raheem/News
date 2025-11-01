@@ -1,0 +1,30 @@
+section.dynamic-content-7 {
+  padding: h.rem(40) 0 h.rem(40);
+  background-color: #302112;
+
+  p {
+    font-size: h.rem(18);
+    font-weight: 300;
+    color: v.$light-coffee;
+    margin-bottom: h.rem(60);
+  }
+
+  .media-container {
+    max-width: h.rem(907);
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: h.rem(60) 0 h.rem(125);
+
+    p {
+      font-size: h.rem(22);
+      line-height: h.rem(40);
+      margin-bottom: h.rem(124);
+    }
+
+    .media-container {
+      max-width: h.rem(907);
+    }
+  }
+}
