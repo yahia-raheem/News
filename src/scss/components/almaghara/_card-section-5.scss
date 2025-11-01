@@ -1,0 +1,53 @@
+section.card-section-5 {
+  padding-top: h.rem(40);
+  padding-bottom: h.rem(40);
+
+  .card {
+    background-color: #5c513d;
+    padding: h.rem(24);
+
+    h6 {
+      color: #a49987;
+      font-weight: 500;
+      font-size: h.rem(22);
+    }
+
+    p {
+      font-size: h.rem(18);
+      font-weight: 300;
+      color: white;
+
+      &:not(:last-of-type) {
+        margin-bottom: h.rem(16);
+      }
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    min-height: 100vh;
+    padding-top: h.rem(181);
+    padding-bottom: 0;
+
+    .card {
+      background-color: #5c513d;
+      padding: h.rem(32);
+
+      h6 {
+        color: #a49987;
+        font-weight: 500;
+        font-size: h.rem(32);
+      }
+
+      p {
+        font-size: h.rem(22);
+        font-weight: 300;
+        line-height: h.rem(40);
+        color: white;
+
+        &:not(:last-of-type) {
+          margin-bottom: h.rem(26);
+        }
+      }
+    }
+  }
+}
