@@ -1,0 +1,40 @@
+table.table-2 {
+  border-collapse: collapse;
+  overflow: hidden;
+  border: 1px solid #624a2d;
+  display: table;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+
+  th,
+  td {
+    padding: 12px 15px;
+    vertical-align: middle;
+    font-size: h.rem(14);
+    font-weight: 300;
+    text-align: start;
+
+    &:not(.text-start) {
+      text-align: center;
+    }
+  }
+
+  thead th {
+    background-color: v.$dark-green;
+  }
+
+  td {
+    color: v.$light-coffee;
+  }
+
+  @media screen and (min-width: 992px) {
+    border: 1px solid #624a2d;
+
+    th,
+    td {
+      padding: 12px 15px;
+      font-size: h.rem(18);
+    }
+  }
+}
