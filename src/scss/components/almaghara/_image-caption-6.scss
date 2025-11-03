@@ -1,0 +1,50 @@
+section.image-caption-6 {
+  padding: h.rem(40) 0;
+  height: 60vh;
+
+  .decoration-container {
+    position: absolute;
+    bottom: 0;
+    inset-inline-start: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: h.rem(60);
+  }
+
+  .card {
+    background-color: #ffffffe5;
+    padding: h.rem(8);
+
+    p {
+      font-weight: 400;
+      font-size: h.rem(18);
+      color: #5c513d;
+
+      &:last-of-type {
+        margin-top: h.rem(18);
+      }
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: h.rem(68) 0;
+    height: h.rem(1280);
+
+    .decoration-container {
+      height: h.rem(247);
+    }
+
+    .card {
+      padding: h.rem(16);
+
+      p {
+        font-size: h.rem(22);
+        line-height: h.rem(40);
+
+        &:last-of-type {
+          margin-top: h.rem(26);
+        }
+      }
+    }
+  }
+}
