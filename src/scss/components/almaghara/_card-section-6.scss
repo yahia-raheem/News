@@ -15,10 +15,13 @@ section.card-section-6 {
 
   .card {
     width: 100%;
-    height: 100%;
     padding: h.rem(18) h.rem(12);
     background-color: #3e4940;
     border: 4px solid #a18150;
+
+    &.half-width {
+      height: 100%;
+    }
 
     i {
       display: inline-table;
@@ -53,7 +56,7 @@ section.card-section-6 {
       }
 
       &:not(.half-width) {
-        margin-top: h.rem(76);
+        margin-top: h.rem(150);
       }
 
       i {

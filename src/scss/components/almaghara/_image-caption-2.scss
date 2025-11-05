@@ -11,6 +11,11 @@ section.image-caption-2 {
     z-index: 1;
   }
 
+  .card {
+    padding: h.rem(14);
+    background-color: rgba(19, 18, 14, 0.7);
+  }
+
   p {
     font-weight: 300;
     font-size: h.rem(18);
@@ -28,6 +33,10 @@ section.image-caption-2 {
 
     .gradient-top {
       height: h.rem(358);
+    }
+
+    .card {
+      padding: h.rem(24);
     }
 
     p {
