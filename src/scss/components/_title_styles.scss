@@ -6,6 +6,10 @@
   @include h.decorativeTitle2();
 }
 
+.title-style-3 {
+  @include h.decorativeTitle3();
+}
+
 .title-style-4 {
   padding: h.rem(10) 0;
   font-size: h.rem(18);
