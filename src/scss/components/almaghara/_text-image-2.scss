@@ -1,9 +1,10 @@
 section.text-image-2 {
   padding-top: h.rem(40);
   padding-bottom: h.rem(40);
+  background-color: #302112;
 
-  .bg-image {
-    filter: brightness(50%);
+  img.bg-image {
+    opacity: 0.3;
   }
 
   img.section-image {
@@ -46,11 +47,13 @@ section.text-image-2 {
     p.content {
       font-size: h.rem(24);
       font-weight: 300;
+      line-height: h.rem(42);
     }
 
     p.footer {
       margin-top: h.rem(60);
       font-size: h.rem(24);
+      line-height: h.rem(42);
     }
   }
 }

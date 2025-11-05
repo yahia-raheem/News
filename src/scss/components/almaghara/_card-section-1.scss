@@ -1,6 +1,10 @@
 section.card-section-1 {
   padding: h.rem(100) 0;
 
+  img.bg-image {
+    filter: brightness(60%);
+  }
+
   .gradient-top {
     position: absolute;
     top: -1px;
@@ -64,6 +68,7 @@ section.card-section-1 {
       p {
         margin-bottom: h.rem(24);
         font-size: h.rem(24);
+        line-height: h.rem(42);
       }
 
       .separator {

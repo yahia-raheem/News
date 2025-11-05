@@ -2,6 +2,12 @@ section.banner-1 {
   padding: h.rem(40) 0;
   border-top: 5px solid #dce2e5;
 
+  background-color: #302112;
+
+  img.bg-image {
+    opacity: 0.3;
+  }
+
   p {
     font-size: h.rem(16);
     font-weight: 300;

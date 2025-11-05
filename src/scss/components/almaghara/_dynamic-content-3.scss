@@ -1,13 +1,27 @@
 section.dynamic-content-3 {
   padding: h.rem(60) 0 h.rem(24);
+  background-color: #302112;
 
   img.bg-image {
-    filter: brightness(0.6);
+    opacity: 0.3;
   }
 
   .timeline-container {
     margin-top: h.rem(25);
     margin-bottom: h.rem(40);
+
+    overflow: hidden;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    img {
+      min-width: 500px;
+      height: auto;
+    }
   }
 
   p {
