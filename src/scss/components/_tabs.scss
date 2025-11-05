@@ -1,0 +1,36 @@
+.tabs-container {
+  .buttons-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: h.rem(27);
+
+    button {
+      padding: h.rem(4) h.rem(12);
+      font-weight: 400;
+      font-size: h.rem(18);
+      color: v.$light-coffee;
+      background-color: #a4998780;
+      box-shadow: none;
+      border: none;
+
+      &.selected {
+        background-color: #a18150;
+        color: white;
+      }
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .buttons-container {
+      gap: h.rem(27);
+
+      button {
+        padding: h.rem(4) h.rem(12);
+        font-size: h.rem(22);
+      }
+    }
+  }
+}
