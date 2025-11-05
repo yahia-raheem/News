@@ -39,6 +39,7 @@ body {
 @import "./components/title-img";
 @import "./components/title_styles";
 @import "./components/table-2";
+@import "./components/timeline";
 
 // page components
 @import "./components/almaghara/hero";
@@ -157,8 +158,9 @@ img {
 }
 
 .chart-container {
-  width: h.rem(773);
+  width: h.rem(942);
   max-width: 100%;
+  margin: 0 auto;
 }
 
 .flourish-credit {

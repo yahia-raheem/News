@@ -28,6 +28,10 @@ table.table-2 {
     color: v.$light-coffee;
   }
 
+  tbody tr:nth-child(even) {
+    background-color: #4d3f31;
+  }
+
   @media screen and (min-width: 992px) {
     border: 1px solid #624a2d;
 

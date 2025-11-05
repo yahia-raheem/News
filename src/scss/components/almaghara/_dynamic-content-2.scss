@@ -32,9 +32,11 @@ section.dynamic-content-2 {
   @media screen and (min-width: 992px) {
     padding: h.rem(67) 0;
     height: 100vh;
+    min-height: h.rem(800);
 
     p.main-content {
       font-size: h.rem(24);
+      line-height: h.rem(42);
     }
 
     .footer-container {
@@ -49,6 +51,7 @@ section.dynamic-content-2 {
 
         p {
           font-size: h.rem(24);
+          line-height: h.rem(42);
 
           &:not(:last-of-type) {
             margin-bottom: h.rem(20);

@@ -1,5 +1,10 @@
 section.dynamic-content-1 {
   padding: h.rem(40) 0 h.rem(40);
+  background-color: #302112;
+
+  img.bg-image {
+    opacity: 0.3;
+  }
 
   p {
     font-weight: 300;
@@ -16,11 +21,13 @@ section.dynamic-content-1 {
       font-size: 28px;
       position: absolute;
       top: -12px;
-      inset-inline-start: -6px;
+      inset-inline-start: -12px;
     }
 
-    video {
+    iframe {
       border: 8px solid #5c513d;
+      max-width: 100%;
+      max-height: 100%;
     }
   }
 
@@ -41,6 +48,7 @@ section.dynamic-content-1 {
 
     p {
       font-size: h.rem(24);
+      line-height: h.rem(42);
     }
 
     .media-container {
@@ -50,7 +58,7 @@ section.dynamic-content-1 {
       .icon-border {
         font-size: 76px;
         top: -32px;
-        inset-inline-start: -22px;
+        inset-inline-start: -30px;
       }
     }
 

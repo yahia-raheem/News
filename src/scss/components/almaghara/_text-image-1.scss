@@ -10,13 +10,14 @@ section.text-image-1 {
     object-fit: contain;
     width: auto;
     margin-bottom: h.rem(20);
-    filter: brightness(35%);
+    filter: brightness(45%);
   }
 
   .container {
     p {
       font-size: h.rem(16);
       margin-bottom: h.rem(18);
+      font-weight: 400;
     }
   }
 
@@ -38,6 +39,7 @@ section.text-image-1 {
       p {
         font-size: h.rem(24);
         margin-bottom: h.rem(33);
+        line-height: h.rem(46);
       }
     }
   }
