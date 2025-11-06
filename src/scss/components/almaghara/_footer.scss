@@ -16,7 +16,7 @@ section.footer {
     padding-top: h.rem(50);
     height: h.rem(163);
     position: relative;
-    background-color: #010000;
+    background-color: #060204;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -29,6 +29,7 @@ section.footer {
 
   .lower {
     position: relative;
+    top: -1px;
     height: 60vh;
   }
 

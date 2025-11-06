@@ -13,6 +13,10 @@ section.dynamic-content-8 {
     }
   }
 
+  .title-style-3 {
+    margin-top: h.rem(20);
+  }
+
   .media-container {
     margin-top: h.rem(35);
 
@@ -25,6 +29,10 @@ section.dynamic-content-8 {
   @media screen and (min-width: 992px) {
     padding-top: h.rem(270);
     padding-bottom: h.rem(90);
+
+    .title-style-3 {
+      margin-top: h.rem(43);
+    }
 
     p {
       font-size: h.rem(22);
