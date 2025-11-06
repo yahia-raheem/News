@@ -10,10 +10,6 @@ section.dynamic-content-9 {
     font-weight: 300;
     font-size: h.rem(18);
     color: white;
-
-    &:first-of-type {
-      margin-top: h.rem(40);
-    }
   }
 
   .media-container {
@@ -43,15 +39,11 @@ section.dynamic-content-9 {
   }
 
   @media screen and (min-width: 992px) {
-    padding: h.rem(88) 0 h.rem(294);
+    padding: h.rem(494) 0 h.rem(294);
 
     p {
       font-size: h.rem(24);
       line-height: h.rem(42);
-
-      &:first-of-type {
-        margin-top: h.rem(89);
-      }
     }
 
     .decoration-container {
