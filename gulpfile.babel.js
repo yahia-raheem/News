@@ -197,7 +197,7 @@ export const build = gulp.series(
   rtlStyles,
   postStyles,
   fileInclude,
-  optimiseImages,
+  // optimiseImages,
   convertToWebp
   // compress
 );
