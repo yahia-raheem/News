@@ -2,6 +2,10 @@ section.image-caption-6 {
   padding: h.rem(40) 0;
   height: 60vh;
 
+  img.bg-image {
+    @include h.appDirValue(transform, translate(-50%, -50%) rotateY(180deg), translate(50%, -50%));
+  }
+
   .decoration-container {
     position: absolute;
     bottom: 0;

@@ -10,6 +10,10 @@ section.quote-slider-1 {
     transform: rotateZ(180deg);
   }
 
+  img.bg-image {
+    @include h.appDirValue(transform, translate(-50%, -50%) rotateY(180deg), translate(50%, -50%));
+  }
+
   .slider-container {
     position: relative;
     width: 100%;

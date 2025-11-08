@@ -1,12 +1,45 @@
-<section class="card-section-1">
-    <div class="gradient-top"></div>
-    <img src="webp/almaghara/card-section-1.webp" loading="lazy" class="bg-image">
-    <div class="container d-relative z-1 p-relative">
-        <div class="row">
-            <div class="col-12 d-flex justify-content-center align-items-center">
-                @@include('./parts/ar/card.part.html')
+<section class="quote-slider-1">
+    <div class="navigation-dots">
+        <span class="dot active" data-slide="slide-1"></span>
+        <span class="dot" data-slide="slide-2"></span>
+    </div>
+    <div class="slider-container">
+        <div class="slide active" id="slide-1">
+            <img src="webp/almaghara/quote-slide-1.webp" loading="lazy" class="bg-image">
+            <div class="container">
+                <div class="quote-card animate fade-in d-start">
+                    <i class="icon-quote">
+                        <span class="path1"></span>
+                        <span class="path2"></span>
+                    </i>
+                    <p class="quote-text"> "The high salinity on our farm limits us to cultivating salt-tolerant crops
+                        like olives, whereas our neighbors with lower salinity levels cultivate a wider variety".</p>
+                    <p class="author">Sorour Abdel Hafez</p>
+                    <p class="role">farm worker</p>
+                </div>
             </div>
         </div>
+        <div class="slide" id="slide-2">
+            <img src="webp/almaghara/quote-slide-2.webp" loading="lazy" class="bg-image">
+            <div class="container">
+                <div class="quote-card animate fade-in d-start">
+                    <i class="icon-quote">
+                        <span class="path1"></span>
+                        <span class="path2"></span>
+                    </i>
+                    <p class="quote-text">“We can detect the saltiness of the well water when using it for washing,
+                        unlike the water on the neighboring farm, which appears normal and is even suitable for ablution
+                        and, on occasion, drinking".</p>
+                    <p class="author">Hassan Sabah</p>
+                    <p class="role">farm worker</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation-dots">
+        <span class="dot active" data-slide="slide-1"></span>
+        <span class="dot" data-slide="slide-2"></span>
     </div>
     <div class="gradient-bottom"></div>
 </section>

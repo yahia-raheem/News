@@ -27,6 +27,7 @@ section.card-section-6 {
       display: inline-table;
       font-size: h.rem(30);
       margin-bottom: h.rem(8);
+      @include h.appDirValue(transform, rotateY(180deg), none);
     }
 
     p {

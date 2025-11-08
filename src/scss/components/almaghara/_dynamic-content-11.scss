@@ -20,7 +20,7 @@ section.dynamic-content-11 {
     }
   }
 
-  img {
+  img:not(.bg-image) {
     margin-bottom: h.rem(18);
   }
 
