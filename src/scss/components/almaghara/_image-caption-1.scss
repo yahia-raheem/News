@@ -22,6 +22,7 @@ section.image-caption-1 {
     padding-top: h.rem(46);
     height: 100vh;
     min-height: h.rem(1150);
+    @include h.appDirValue(min-height, h.rem(1200), h.rem(1150));
 
     p {
       font-size: h.rem(22);
