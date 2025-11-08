@@ -6,6 +6,10 @@ section.testimonials-1 {
     max-width: 1670px;
   }
 
+  img.bg-image {
+    @include h.appDirValue(transform, translate(-50%, -50%) rotateY(180deg), translate(50%, -50%));
+  }
+
   .card {
     max-width: h.rem(493);
     padding: h.rem(16) h.rem(12);
@@ -17,6 +21,7 @@ section.testimonials-1 {
       display: inline-table;
       font-size: h.rem(30);
       margin-bottom: h.rem(8);
+      @include h.appDirValue(transform, rotateY(180deg), none);
     }
 
     p {

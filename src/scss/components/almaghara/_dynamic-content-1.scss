@@ -22,6 +22,7 @@ section.dynamic-content-1 {
       position: absolute;
       top: -12px;
       inset-inline-start: -12px;
+      @include h.appDirValue(transform, rotateY(180deg), none);
     }
 
     iframe {

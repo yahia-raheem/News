@@ -3,6 +3,10 @@ section.bg-card-1 {
   width: 100%;
   height: 60vh;
 
+  img.bg-image {
+    @include h.appDirValue(transform, translate(-50%, -50%) rotateY(180deg), translate(50%, -50%));
+  }
+
   .gradient-top {
     position: absolute;
     top: -1px;
