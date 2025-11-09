@@ -6,7 +6,7 @@ section.text-image-1 {
   .sec-image {
     position: relative;
     top: 0;
-    @include h.appDirValue(inset-inline-end, -100px, 0);
+    inset-inline-end: 0;
     object-fit: contain;
     width: auto;
     margin-bottom: h.rem(20);
@@ -28,7 +28,7 @@ section.text-image-1 {
     .sec-image {
       position: absolute;
       top: 0;
-      inset-inline-end: 0;
+      @include h.appDirValue(inset-inline-end, -100px, 0);
       object-fit: contain;
       width: auto;
       height: 100%;
