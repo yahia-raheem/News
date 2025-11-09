@@ -30,7 +30,7 @@ section.image-caption-3 {
 
   @media screen and (min-width: 992px) {
     padding-top: h.rem(297);
-    height: 100vh;
+    min-height: 100vh;
 
     .card {
       padding: h.rem(40);
