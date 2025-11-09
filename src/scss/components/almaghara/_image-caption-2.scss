@@ -31,9 +31,9 @@ section.image-caption-2 {
   }
 
   @media screen and (min-width: 992px) {
-    height: 100vh;
+    min-height: 100vh;
     padding-top: h.rem(176);
-    padding-bottom: 0;
+    padding-bottom: h.rem(176);
 
     .gradient-top {
       height: h.rem(358);
