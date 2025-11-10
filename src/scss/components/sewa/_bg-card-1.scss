@@ -24,13 +24,12 @@ section.bg-card-1 {
   }
 
   .content-card-1 {
-    background-color: rgba(48, 33, 18, 0.8);
-    padding: h.rem(18) h.rem(20);
+    background-color: #302112F2;
+    padding: h.rem(24);
     border-inline-start: 6px solid #b76635;
 
     p {
-      font-weight: 400;
-      font-size: h.rem(18);
+      color: #A49987;
     }
   }
 
@@ -45,12 +44,6 @@ section.bg-card-1 {
     .content-card-1 {
       padding: h.rem(32);
       border-inline-start: 6px solid #b76635;
-
-      p {
-        font-weight: 400;
-        font-size: h.rem(24);
-        line-height: h.rem(38);
-      }
     }
   }
 }
