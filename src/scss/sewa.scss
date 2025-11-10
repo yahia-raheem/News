@@ -42,6 +42,7 @@ body {
 
 // page components
 @import "./components/sewa/hero";
+@import "./components/sewa/bg-card-1";
 
 a {
   text-decoration: none !important;
@@ -73,6 +74,7 @@ span.icon-quote {
   object-fit: cover;
   inset-inline-start: 0;
   overflow: hidden;
+  z-index: 1;
 
   img {
     min-height: 100%;
@@ -81,11 +83,11 @@ span.icon-quote {
   }
 
   &.bottom-decoration {
-    bottom: 0;
+    bottom: -1px;
   }
 
   &.top-decoration {
-    top: 0;
+    top: -1px;
   }
 }
 
