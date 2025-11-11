@@ -1,0 +1,32 @@
+section.bg-card-2 {
+  padding: h.rem(80) 0;
+
+  .sep {
+    @include h.dashedline(10px, -75deg, #5c513d, 6px, 32);
+    margin: h.rem(18) 0;
+  }
+
+  .content-card {
+    padding: h.rem(80) h.rem(20);
+    background-color: #302112e5;
+  }
+
+  .top-decoration {
+    @include h.section-gradient(#302112, h.rem(209));
+  }
+  .bottom-decoration {
+    @include h.section-gradient(#302112, h.rem(314), "bottom");
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: 0;
+
+    .sep {
+      margin: h.rem(26) 0;
+    }
+
+    .content-card {
+      padding: h.rem(155) h.rem(40);
+    }
+  }
+}
