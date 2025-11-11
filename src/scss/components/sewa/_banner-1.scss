@@ -1,0 +1,19 @@
+section.banner-1 {
+  padding: h.rem(80) 0 h.rem(40);
+
+  p:not(:last-of-type) {
+    margin-bottom: h.rem(20);
+  }
+
+  p {
+    color: #A49987;
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: h.rem(155) 0 h.rem(76);
+
+    p:not(:last-of-type) {
+      margin-bottom: h.rem(40);
+    }
+  }
+}

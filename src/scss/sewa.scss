@@ -45,6 +45,7 @@ body {
 @import "./components/sewa/bg-card-1";
 @import "./components/sewa/bg-card-2";
 @import "./components/sewa/bg-card-3";
+@import "./components/sewa/banner-1";
 
 a {
   text-decoration: none !important;
@@ -181,4 +182,8 @@ i.icon-pin::before {
 
 .z-1 {
   z-index: 1;
+}
+
+.op-3rd {
+  opacity: 0.3;
 }
