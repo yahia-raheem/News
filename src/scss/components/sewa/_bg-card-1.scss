@@ -1,7 +1,8 @@
 section.bg-card-1 {
   padding-top: h.rem(50);
+  padding-bottom: h.rem(80);
   width: 100%;
-  height: 60vh;
+  height: 70vh;
 
   img.bg-image {
     @include h.appDirValue(
@@ -11,16 +12,11 @@ section.bg-card-1 {
     );
   }
 
-  .decoration {
-    height: h.rem(150);
-  }
-
   .top-decoration {
-    background: linear-gradient(0deg, rgba(0, 24, 58, 0) 0%, #030101 100%);
+    @include h.section-gradient(#030101, h.rem(314));
   }
   .bottom-decoration {
-    transform: rotateZ(180deg);
-    background: linear-gradient(0deg, rgba(0, 24, 58, 0) 0%, #302112 100%);
+    @include h.section-gradient(#302112, h.rem(314), "bottom");
   }
 
   .content-card-1 {
@@ -36,10 +32,6 @@ section.bg-card-1 {
   @media screen and (min-width: 992px) {
     padding-top: h.rem(116);
     height: 100vh;
-
-    .decoration {
-      height: h.rem(314);
-    }
 
     .content-card-1 {
       padding: h.rem(32);

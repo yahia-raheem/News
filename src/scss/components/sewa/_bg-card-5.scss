@@ -1,0 +1,7 @@
+section.bg-card-5 {
+  padding-bottom: h.rem(80);
+
+  @media screen and (min-width: 992px) {
+    padding-bottom: h.rem(129);
+  }
+}
