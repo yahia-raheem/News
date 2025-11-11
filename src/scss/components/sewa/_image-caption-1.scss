@@ -1,0 +1,17 @@
+section.image-caption-1 {
+  padding: h.rem(60) 0;
+  height: 70vh;
+
+  .bottom-decoration {
+    @include h.section-gradient(#302112, h.rem(262), "bottom");
+  }
+
+  p {
+    color: #3e4940;
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: h.rem(188) 0 0;
+    height: 100vh;
+  }
+}
