@@ -206,10 +206,11 @@
   $color: #030101,
   $heightDesktop: m.rem(150),
   $position: top,
+  $startingColor: rgba(48, 33, 18, 0),
   $heightMobile: m.rem(80)
 ) {
   height: $heightMobile;
-  background: linear-gradient(0deg, rgba(0, 24, 58, 0) 0%, $color 100%);
+  background: linear-gradient(0deg, $startingColor 0%, $color 100%);
 
   @if ($position != "top") {
     transform: rotateZ(180deg);

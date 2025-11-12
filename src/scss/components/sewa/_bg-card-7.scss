@@ -1,0 +1,40 @@
+section.bg-card-7 {
+  height: 70vh;
+
+  .top-decoration {
+    @include h.section-gradient(#302112, h.rem(262));
+  }
+
+  .bottom-decoration {
+    @include h.section-gradient(#302112, h.rem(312), "bottom");
+  }
+
+  .content-card {
+    padding: h.rem(20);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: h.rem(10);
+    margin-bottom: h.rem(80);
+    background-color: #3e4940f0;
+
+    span.icon-quote {
+      font-size: h.rem(28);
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    height: 100vh;
+
+    .content-card {
+      padding: h.rem(40);
+      gap: h.rem(20);
+      margin-bottom: h.rem(146);
+
+      span.icon-quote {
+        font-size: h.rem(58);
+      }
+    }
+  }
+}
