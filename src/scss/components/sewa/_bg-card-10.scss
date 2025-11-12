@@ -1,0 +1,10 @@
+section.bg-card-10 {
+    .decoration {
+        &.top-decoration {
+            @include h.section-gradient(#302112, h.rem(171));
+        }
+        &.bottom-decoration {
+            @include h.section-gradient(#170C01, h.rem(171), "bottom");
+        }
+    }
+}
