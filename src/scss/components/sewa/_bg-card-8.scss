@@ -1,0 +1,23 @@
+section.bg-card-8 {
+  padding: h.rem(80) 0;
+
+  .decoration.top-decoration {
+    @include h.section-gradient(#302112, h.rem(312));
+  }
+
+  .content-card-1 {
+    p:not(:last-of-type) {
+      margin-bottom: h.rem(20);
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: h.rem(274) 0;
+
+    .content-card-1 {
+      p:not(:last-of-type) {
+        margin-bottom: h.rem(40);
+      }
+    }
+  }
+}

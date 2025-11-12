@@ -1,6 +1,6 @@
 section.bg-card-4 {
   padding: h.rem(80) 0;
-  height: 70vh;
+  min-height: 70vh;
   
   .content-card {
     border: 2px solid #a18150;
@@ -17,7 +17,7 @@ section.bg-card-4 {
   }
 
   @media screen and (min-width: 992px) {
-    height: 100vh;
+    min-height: 100vh;
 
     .content-card {
       padding: h.rem(32) h.rem(40);
