@@ -1,0 +1,18 @@
+section.bg-card-12 {
+  height: 70vh;
+  padding: h.rem(80) 0;
+
+  .card {
+    padding: h.rem(16) h.rem(20);
+    border-inline-start: 5px solid #a18150;
+    background-color: #3E4940F2;
+  }
+
+  @media screen and (min-width: 992px) {
+    height: 100vh;
+
+    .card {
+      padding: h.rem(32) h.rem(40);
+    }
+  }
+}
