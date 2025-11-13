@@ -39,6 +39,7 @@ body {
 @import "./components/title-img";
 @import "./components/title_styles";
 @import "./components/text-styles";
+@import "./components/tabs";
 
 // page components
 @import "./components/sewa/hero";
@@ -59,6 +60,7 @@ body {
 @import "./components/sewa/bg-card-12";
 @import "./components/sewa/banner-3";
 @import "./components/sewa/bg-card-13";
+@import "./components/sewa/dynamic-content-1";
 
 a {
   text-decoration: none !important;

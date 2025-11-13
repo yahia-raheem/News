@@ -1,0 +1,44 @@
+section.dynamic-content-1 {
+  padding: h.rem(40) 0;
+
+  h3 {
+    margin-bottom: h.rem(25);
+  }
+
+  .targets-container {
+    position: relative;
+    margin-bottom: h.rem(40);
+
+    .media-container {
+      position: relative;
+      z-index: 3;
+    }
+  }
+
+  p {
+    margin-bottom: h.rem(40);
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: h.rem(80) 0 h.rem(100);
+
+    h3 {
+      margin-bottom: h.rem(52);
+    }
+
+    .targets-container {
+      margin-bottom: h.rem(92);
+
+      .legend {
+        position: absolute;
+        bottom: h.rem(65);
+        inset-inline-start: h.rem(20);
+        max-width: 40vw;
+      }
+    }
+
+    p {
+      margin-bottom: h.rem(83);
+    }
+  }
+}
