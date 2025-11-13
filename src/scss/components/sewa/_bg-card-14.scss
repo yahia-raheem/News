@@ -1,0 +1,17 @@
+section.bg-card-14 {
+  .content-card {
+    background-color: #302112e5;
+
+    p:not(:last-of-type) {
+      margin-bottom: h.rem(20);
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .content-card {
+      p:not(:last-of-type) {
+        margin-bottom: h.rem(40);
+      }
+    }
+  }
+}

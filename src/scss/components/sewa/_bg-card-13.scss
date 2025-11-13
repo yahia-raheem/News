@@ -1,0 +1,36 @@
+section.bg-card-13 {
+  height: 70vh;
+  padding: h.rem(70) 0;
+
+  .card {
+    padding: h.rem(16);
+    border-top: 4px solid #b76635;
+    background-color: #302112e5;
+
+    h6,
+    p {
+      color: #a49987;
+    }
+
+    h6 {
+      font-weight: 400;
+      font-size: h.rem(20);
+      margin-bottom: h.rem(8);
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    height: 100vh;
+    padding: h.rem(140) 0;
+
+    .card {
+      padding: h.rem(32);
+
+
+      h6 {
+        font-size: h.rem(32);
+        margin-bottom: h.rem(16);
+      }
+    }
+  }
+}

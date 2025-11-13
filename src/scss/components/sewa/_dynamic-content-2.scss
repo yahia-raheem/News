@@ -1,0 +1,15 @@
+section.dynamic-content-2 {
+  padding: h.rem(50) 0;
+
+  .chart-container {
+    margin-top: h.rem(25);
+  }
+  
+  @media screen and (min-width: 992px) {
+    padding: h.rem(90) 0 h.rem(100);
+  
+    .chart-container {
+      margin-top: h.rem(56);
+    }
+  }
+}
