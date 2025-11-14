@@ -1,10 +1,15 @@
-section.bg-card-14 {
+section.bg-card-14,
+section.bg-card-15 {
   .content-card {
     background-color: #302112e5;
 
     p:not(:last-of-type) {
       margin-bottom: h.rem(20);
     }
+  }
+
+  .sep {
+    margin-top: 0;
   }
 
   @media screen and (min-width: 992px) {

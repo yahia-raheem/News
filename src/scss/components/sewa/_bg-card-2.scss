@@ -3,7 +3,7 @@ section.bg-card-2 {
   min-height: 70vh;
   
   .sep {
-    @include h.dashedline(10px, -75deg, #5c513d, 6px, 32);
+    @include h.dashedline(22px, -75deg, #A18150, 6px, 32);
     margin: h.rem(18) 0;
   }
   
