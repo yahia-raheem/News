@@ -1,0 +1,23 @@
+section.dynamic-content-4 {
+  padding: h.rem(60) 0;
+
+  .quote-card-2 {
+    margin-bottom: h.rem(40);
+  }
+
+  .text-content {
+    margin-top: h.rem(40);
+  }
+  
+  @media screen and (min-width: 992px) {
+    padding: h.rem(80) 0 h.rem(130);
+
+    .text-content {
+      margin-top: 0;
+    }
+
+    .quote-card-2 {
+      margin-bottom: h.rem(100);
+    }
+  }
+}
