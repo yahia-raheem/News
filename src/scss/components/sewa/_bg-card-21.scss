@@ -1,0 +1,5 @@
+section.bg-card-21 {
+  .decoration.bottom-decoration {
+    @include h.section-gradient(#170C01, h.rem(325), "bottom");
+  }
+}
