@@ -1,0 +1,7 @@
+section.banner-7 {
+    padding-top: h.rem(60);
+
+    @media screen and (min-width: 992px) {
+        padding-top: h.rem(259);
+    }
+}
