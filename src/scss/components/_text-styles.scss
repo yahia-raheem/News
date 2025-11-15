@@ -36,6 +36,16 @@
   }
 }
 
+.t-500-22-40 {
+  font-weight: 500;
+  font-size: h.rem(16);
+
+  @media screen and (min-width: 992px) {
+    font-size: h.rem(22);
+    line-height: h.rem(40);
+  }
+}
+
 .t-400-24-40 {
   font-weight: 400;
   font-size: h.rem(18);

@@ -1,0 +1,20 @@
+section.bg-card-26 {
+  .content-card {
+    background-color: #3e4940f2;
+    align-items: flex-start;
+
+    h6 {
+      font-weight: 500;
+      font-size: h.rem(24);
+      margin-bottom: h.rem(16);
+    }
+
+    @media screen and (min-width: 992px) {
+      h6 {
+        font-size: h.rem(32);
+        margin-bottom: h.rem(26);
+        line-height: h.rem(40);
+      }
+    }
+  }
+}
