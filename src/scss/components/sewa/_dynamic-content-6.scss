@@ -1,0 +1,15 @@
+section.dynamic-content-6 {
+  padding: h.rem(60) 0;
+
+  h3 {
+    margin-bottom: h.rem(30);
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: h.rem(130) 0;
+
+    h3 {
+      margin-bottom: h.rem(68);
+    }
+  }
+}
