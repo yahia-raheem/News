@@ -1,0 +1,21 @@
+section.banner-12 {
+  .buttons-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: h.rem(83);
+
+    .prev-btn {
+      background-color: #A49987;
+    }
+
+    .next-btn {
+      background-color: #A18150;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    
+  }
+}
