@@ -1,0 +1,23 @@
+section.banner-12 {
+  .buttons-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: h.rem(40);
+
+    .prev-btn {
+      background-color: #a49987;
+    }
+
+    .next-btn {
+      background-color: #a18150;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .buttons-row {
+      margin-top: h.rem(83);
+    }
+  }
+}
