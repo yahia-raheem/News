@@ -1,0 +1,11 @@
+section.bg-card-28 {
+  padding: h.rem(70) 0;
+  
+  .decoration.top-decoration {
+    @include h.section-gradient(#452D10, h.rem(260));
+  }
+  
+  @media screen and (min-width: 992px) {
+    padding: h.rem(182) 0;
+  }
+}

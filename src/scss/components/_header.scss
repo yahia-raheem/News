@@ -4,6 +4,12 @@ header.site-header {
   padding-top: h.rem(30);
   z-index: 5;
 
+  &.dark {
+    background-color: #8f7d6880;
+    padding: h.rem(18) 0;
+    position: relative;
+  }
+
   img.logo {
     max-width: 120px;
     height: auto;
@@ -12,6 +18,10 @@ header.site-header {
   @media screen and (min-width: 992px) {
     padding-top: h.rem(53);
     z-index: 5;
+
+    &.dark {
+      padding: h.rem(26);
+    }
 
     img.logo {
       max-width: 150px;
