@@ -1,0 +1,12 @@
+section.story {
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 992px) {
+    aspect-ratio: 16/9;
+    flex-wrap: nowrap;
+
+    a {
+      width: calc(100% / 3);
+    }
+  }
+}
