@@ -9,6 +9,14 @@ section.bg-card-7 {
     @include h.section-gradient(#302112, h.rem(312), "bottom");
   }
 
+  img.bg-image {
+    @include h.appDirValue(
+      transform,
+      translate(-50%, -50%) rotateY(180deg),
+      translate(50%, -50%)
+    );
+  }
+
   .content-card {
     padding: h.rem(20);
     display: flex;

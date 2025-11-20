@@ -1,12 +1,20 @@
 section.bg-card-2 {
   padding: h.rem(40) 0;
   min-height: 70vh;
-  
+
+  img.bg-image {
+    @include h.appDirValue(
+      transform,
+      translate(-50%, -50%) rotateY(180deg),
+      translate(50%, -50%)
+    );
+  }
+
   .sep {
-    @include h.dashedline(22px, -75deg, #A18150, 6px, 32);
+    @include h.dashedline(22px, -75deg, #a18150, 6px, 32);
     margin: h.rem(18) 0;
   }
-  
+
   .content-card {
     padding: h.rem(40) h.rem(20);
     background-color: #302112e5;
@@ -15,14 +23,14 @@ section.bg-card-2 {
     justify-content: center;
     align-items: center;
   }
-  
+
   .top-decoration {
     @include h.section-gradient(#302112, h.rem(209));
   }
   .bottom-decoration {
     @include h.section-gradient(#302112, h.rem(314), "bottom");
   }
-  
+
   @media screen and (min-width: 992px) {
     padding: 0;
     min-height: 100vh;
