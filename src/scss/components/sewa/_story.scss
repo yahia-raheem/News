@@ -1,6 +1,15 @@
 section.story {
   flex-wrap: wrap;
 
+  img {
+    transition: all 0.5s;
+
+    &:hover {
+      filter: saturate(1.5);
+      transform: scale(1.01);
+    }
+  }
+
   @media screen and (min-width: 992px) {
     aspect-ratio: 16/9;
     flex-wrap: nowrap;
