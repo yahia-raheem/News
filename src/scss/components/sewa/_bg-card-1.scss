@@ -2,7 +2,7 @@ section.bg-card-1 {
   padding-top: h.rem(50);
   padding-bottom: h.rem(80);
   width: 100%;
-  min-height: 70vh;
+  min-height: 100vh;
 
   img.bg-image {
     @include h.appDirValue(
