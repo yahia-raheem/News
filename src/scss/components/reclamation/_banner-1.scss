@@ -5,7 +5,15 @@ section.banner-1 {
     color: #a49987;
   }
 
+  h3 {
+    margin-top: h.rem(30);
+  }
+  
   @media screen and (min-width: 992px) {
     padding: h.rem(94) 0;
+
+    h3 {
+      margin-top: h.rem(60);
+    }
   }
 }
