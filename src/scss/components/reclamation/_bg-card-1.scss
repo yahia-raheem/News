@@ -26,16 +26,25 @@ section.bg-card-1 {
 
     p {
       color: #a49987;
+
+      &:not(:last-of-type) {
+        margin-bottom: h.rem(20);
+      }
     }
   }
-
+  
   @media screen and (min-width: 992px) {
     padding-top: h.rem(116);
     min-height: 100vh;
-
+    
     .content-card-1 {
       padding: h.rem(32);
       border-inline-start: 6px solid #b76635;
+      p {
+        &:not(:last-of-type) {
+          margin-bottom: h.rem(40);
+        }
+      }
     }
   }
 }
