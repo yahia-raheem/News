@@ -1,0 +1,11 @@
+section.banner-1 {
+  padding: h.rem(40) 0;
+
+  p {
+    color: #a49987;
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: h.rem(94) 0;
+  }
+}

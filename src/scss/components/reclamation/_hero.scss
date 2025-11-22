@@ -1,0 +1,27 @@
+section.hero {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+
+  .content {
+    position: relative;
+    z-index: 2;
+    max-width: 70vw;
+  }
+
+  .decoration {
+    @include h.section-gradient(#A18150, h.rem(314), "bottom");
+  }
+
+  @media screen and (min-width: 992px) {
+    min-height: 100vh;
+
+    .content {
+      max-width: h.rem(1126);
+    }
+
+    .decoration {
+      height: h.rem(314);
+    }
+  }
+}
