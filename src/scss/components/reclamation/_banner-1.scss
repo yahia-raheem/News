@@ -8,9 +8,17 @@ section.banner-1 {
   h3 {
     margin-top: h.rem(30);
   }
+
+  p.suffix {
+    margin-top: h.rem(15);
+  }
   
   @media screen and (min-width: 992px) {
     padding: h.rem(94) 0;
+
+    p.suffix {
+      margin-top: h.rem(30);
+    }
 
     h3 {
       margin-top: h.rem(60);
