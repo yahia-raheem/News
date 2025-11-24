@@ -1,0 +1,37 @@
+.card.quote-card-2 {
+  padding: h.rem(18);
+  border: 2px dotted #a18150;
+  position: relative;
+
+  p:not(:last-of-type) {
+    margin-bottom: h.rem(20);
+  }
+
+  .quote {
+    position: absolute;
+    top: 0;
+    inset-inline-start: h.rem(10);
+    transform: translateY(-50%);
+
+    span.icon-quote {
+      font-size: h.rem(22);
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    margin-top: h.rem(77);
+    padding: h.rem(24);
+
+    p:not(:last-of-type) {
+      margin-bottom: h.rem(40);
+    }
+
+    .quote {
+      inset-inline-start: h.rem(20);
+
+      span.icon-quote {
+        font-size: h.rem(42);
+      }
+    }
+  }
+}

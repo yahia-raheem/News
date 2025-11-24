@@ -12,10 +12,17 @@ section.banner-1 {
   p.suffix {
     margin-top: h.rem(15);
   }
+
+  .quote-card-2 {
+    margin-bottom: h.rem(18);
+  }
   
   @media screen and (min-width: 992px) {
     padding: h.rem(94) 0;
-
+    
+    .quote-card-2 {
+      margin-bottom: h.rem(34);
+    }
     p.suffix {
       margin-top: h.rem(30);
     }
