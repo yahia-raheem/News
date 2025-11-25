@@ -7,6 +7,7 @@ section.hero {
     position: relative;
     z-index: 2;
     max-width: 70vw;
+    top: -50px
   }
 
   .decoration {
@@ -17,7 +18,8 @@ section.hero {
     min-height: 100vh;
 
     .content {
-      max-width: h.rem(1126);
+      max-width: h.rem(1016);
+      top: -100px;
     }
 
     .decoration {
