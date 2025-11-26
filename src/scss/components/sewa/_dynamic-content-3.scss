@@ -8,10 +8,100 @@ section.dynamic-content-3 {
     margin-bottom: 0;
   }
 
+  .pins {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+
+    img {
+      position: absolute;
+      max-height: 50px;
+      width: auto;
+    }
+
+    .om-alsagheer {
+      top: -10%;
+      inset-inline-start: 21%;
+    }
+
+    .abo-shereef {
+      top: 3%;
+      inset-inline-start: 40%;
+    }
+
+    .aghroomy {
+      top: 22%;
+      inset-inline-start: 56%;
+    }
+
+    .madeenet-sewa {
+      top: 36%;
+      inset-inline-start: 62%;
+    }
+
+    .bahy-el-deen {
+      top: 45%;
+      inset-inline-start: 73%;
+    }
+
+    .maraky {
+      top: 53%;
+      inset-inline-start: 87%;
+    }
+  }
+
+  .legend {
+    align-self: start;
+  }
+
+  .buttons-container {
+    margin-bottom: h.rem(60);
+  }
+
   @media screen and (min-width: 992px) {
     padding: h.rem(130) 0;
+
     p {
       margin-bottom: h.rem(40);
+    }
+
+    .pins {
+      img {
+        max-height: 150px;
+      }
+
+      .om-alsagheer {
+        top: 0%;
+        inset-inline-start: 21%;
+      }
+
+      .abo-shereef {
+        top: 13%;
+        inset-inline-start: 40%;
+      }
+
+      .aghroomy {
+        top: 32%;
+        inset-inline-start: 56%;
+      }
+
+      .madeenet-sewa {
+        top: 46%;
+        inset-inline-start: 65%;
+      }
+
+      .bahy-el-deen {
+        top: 55%;
+        inset-inline-start: 76%;
+      }
+
+      .maraky {
+        top: 67%;
+        inset-inline-start: 87%;
+      }
     }
   }
 }
