@@ -1,0 +1,32 @@
+.btn-container.nav-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: h.rem(20);
+  margin-top: h.rem(40);
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: h.rem(8);
+    font-weight: 400;
+    padding-block: h.rem(16);
+  }
+
+  .btn-next {
+    background-color: #3e4940;
+
+    span::before {
+      @include h.appDirValue(content, "\ea3c", "\ea40");
+    }
+  }
+
+  .btn-prev {
+    background-color: #a49a87;
+
+    span::before {
+      @include h.appDirValue(content, "\ea40", "\ea3c");
+    }
+  }
+}
