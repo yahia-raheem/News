@@ -24,37 +24,37 @@ section.dynamic-content-3 {
 
     .om-alsagheer {
       top: -10%;
-      inset-inline-start: 21%;
+      @include h.appDirValue(right, 21%, 21%);
     }
 
     .abo-shereef {
       top: 3%;
-      inset-inline-start: 40%;
+      @include h.appDirValue(right, 40%, 40%);
     }
 
     .aghroomy {
       top: 22%;
-      inset-inline-start: 56%;
+      @include h.appDirValue(right, 56%, 56%);
     }
 
     .madeenet-sewa {
       top: 36%;
-      inset-inline-start: 62%;
+      @include h.appDirValue(right, 62%, 62%);
     }
 
     .bahy-el-deen {
       top: 45%;
-      inset-inline-start: 73%;
+      @include h.appDirValue(right, 73%, 73%);
     }
 
     .maraky {
       top: 53%;
-      inset-inline-start: 87%;
+      @include h.appDirValue(right, 87%, 87%);
     }
   }
 
   .legend {
-    align-self: start;
+    @include h.appDirValue(align-self, flex-end, flex-start);
   }
 
   .buttons-container {
@@ -75,32 +75,32 @@ section.dynamic-content-3 {
 
       .om-alsagheer {
         top: 0%;
-        inset-inline-start: 21%;
+        @include h.appDirValue(right, 21%, 21%);
       }
 
       .abo-shereef {
         top: 13%;
-        inset-inline-start: 40%;
+        @include h.appDirValue(right, 40%, 40%);
       }
 
       .aghroomy {
         top: 32%;
-        inset-inline-start: 56%;
+        @include h.appDirValue(right, 56%, 56%);
       }
 
       .madeenet-sewa {
         top: 46%;
-        inset-inline-start: 65%;
+        @include h.appDirValue(right, 65%, 65%);
       }
 
       .bahy-el-deen {
         top: 55%;
-        inset-inline-start: 76%;
+        @include h.appDirValue(right, 76%, 76%);
       }
 
       .maraky {
         top: 67%;
-        inset-inline-start: 87%;
+        @include h.appDirValue(right, 87%, 87%);
       }
     }
   }
