@@ -32,7 +32,7 @@ section.dynamic-content-1 {
       .legend {
         position: absolute;
         bottom: h.rem(65);
-        inset-inline-start: h.rem(20);
+        @include h.appDirValue(right, h.rem(20), h.rem(20));
         max-width: 40vw;
       }
     }
