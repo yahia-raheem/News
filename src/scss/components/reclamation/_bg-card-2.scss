@@ -1,6 +1,14 @@
 section.bg-card-2 {
   padding: h.rem(80) 0;
   min-height: 100vh;
+
+  img.bg-image {
+    @include h.appDirValue(
+      transform,
+      translate(-50%, -50%) rotateY(180deg),
+      translate(50%, -50%)
+    );
+  }
   
   .content-card {
     border: 2px solid #a18150;

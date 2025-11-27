@@ -199,3 +199,9 @@ i.icon-pin::before {
 .op-3rd {
   opacity: 0.3;
 }
+
+header.site-header {
+  img.lang-change {
+    filter: brightness(0.5);
+  }
+}
