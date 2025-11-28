@@ -75,6 +75,11 @@
   margin-bottom: m.rem(22);
   margin-inline: auto;
 
+  span {
+    font-weight: 300;
+    font-size: m.rem(20);
+  }
+
   &::before,
   &::after {
     position: absolute;
@@ -103,9 +108,13 @@
   }
 
   @media screen and (min-width: 992px) {
-    font-size: m.rem(34);
+    font-size: m.rem(36);
     padding: m.rem(13) 0;
     margin-bottom: m.rem(43);
+
+    span {
+      font-size: m.rem(30);
+    }
 
     &::before,
     &::after {
