@@ -12,8 +12,12 @@ section.bg-card-1 {
     );
   }
 
+  .border-none {
+    border: none !important;
+  }
+
   .top-decoration {
-    @include h.section-gradient(#302112F2, h.rem(218));
+    @include h.section-gradient(#302112f2, h.rem(218));
   }
   .bottom-decoration {
     @include h.section-gradient(#302112, h.rem(218), "bottom");
@@ -37,6 +41,21 @@ section.bg-card-1 {
     }
   }
 
+  .footer-content {
+    p {
+      color: #3e4940;
+      text-align: center;
+
+      &:not(:last-of-type) {
+        margin-bottom: h.rem(20);
+      }
+
+      span {
+        display: block;
+      }
+    }
+  }
+
   @media screen and (min-width: 992px) {
     padding-top: h.rem(116);
     min-height: 100vh;
@@ -49,6 +68,14 @@ section.bg-card-1 {
         margin-bottom: h.rem(26);
       }
 
+      p {
+        &:not(:last-of-type) {
+          margin-bottom: h.rem(40);
+        }
+      }
+    }
+
+    .footer-content {
       p {
         &:not(:last-of-type) {
           margin-bottom: h.rem(40);
