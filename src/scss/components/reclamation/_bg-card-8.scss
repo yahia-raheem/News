@@ -1,0 +1,22 @@
+section.bg-card-8 {
+  height: 100vh;
+  padding: h.rem(70) 0;
+
+  .card {
+    padding: h.rem(20);
+    background-color: #3E4940F0;
+
+    p {
+      color: white;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    height: 100vh;
+    padding: h.rem(140) 0;
+
+    .card {
+      padding: h.rem(40);
+    }
+  }
+}

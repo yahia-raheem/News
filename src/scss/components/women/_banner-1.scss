@@ -1,0 +1,53 @@
+section.banner-1 {
+  padding: h.rem(20) 0 h.rem(40);
+  
+  p {
+    color: #a49987;
+  }
+  
+  h3 {
+    margin-top: h.rem(30) !important;
+  }
+
+  .chart-container {
+    margin-bottom: h.rem(20);
+  }
+  
+  .suffix {
+    margin-top: h.rem(15);
+  }
+  
+  .prefix {
+    margin-top: h.rem(30) !important;
+  }
+  
+  .quote-card-2 {
+    margin-bottom: h.rem(18);
+  }
+  
+  @media screen and (min-width: 992px) {
+    padding: h.rem(40) 0 h.rem(94);
+
+    .chart-container {
+      margin-bottom: h.rem(40);
+    }
+    
+    &.large-padding {
+      padding-top: h.rem(228);
+    }
+
+    .quote-card-2 {
+      margin-bottom: h.rem(34);
+    }
+    .suffix {
+      margin-top: h.rem(30);
+    }
+    
+    .prefix {
+      margin-top: h.rem(50) !important;
+    }
+    h3 {
+      margin-top: h.rem(50) !important;
+    }
+  }
+}

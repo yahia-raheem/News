@@ -1,9 +1,17 @@
 .t-white {
-  color: white;
+  color: white !important;
 }
 
 .t-primary {
-  color: #A49987;
+  color: #A49987 !important;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.t-start {
+  text-align: start;
 }
 
 .t-300-22-40 {
@@ -52,6 +60,16 @@
 
   @media screen and (min-width: 992px) {
     font-size: h.rem(24);
+    line-height: h.rem(40);
+  }
+}
+
+.t-400-38-40 {
+  font-weight: 400;
+  font-size: h.rem(24);
+
+  @media screen and (min-width: 992px) {
+    font-size: h.rem(38);
     line-height: h.rem(40);
   }
 }

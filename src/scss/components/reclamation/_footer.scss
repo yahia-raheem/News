@@ -1,0 +1,28 @@
+section.footer {
+  padding: h.rem(60) 0;
+  min-height: 80vh;
+
+  p {
+    color: #3e4940;
+    text-align: center;
+
+    &:not(:last-of-type) {
+      margin-bottom: h.rem(20);
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: h.rem(113) 0;
+    aspect-ratio: 2251/1501;
+
+    p {
+      &:not(:last-of-type) {
+        margin-bottom: h.rem(40);
+      }
+    }
+  }
+}
