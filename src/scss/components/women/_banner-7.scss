@@ -1,0 +1,39 @@
+section.banner-7 {
+  .lakes-2 {
+    top: -8%;
+    @include h.appDirValue(right, 64%, 64%);
+  }
+  .unsuitable {
+    top: 7%;
+    @include h.appDirValue(right, -36%, -36%);
+    transform: scale(0.37) !important;
+  }
+  .low {
+    top: 42%;
+    @include h.appDirValue(right, -31%, -31%);
+  }
+  .moderate {
+    top: -26%;
+    @include h.appDirValue(right, 20%, 20%);
+  }
+
+  @media screen and (min-width: 992px) {
+    .lakes-2 {
+      top: 17%;
+      @include h.appDirValue(right, 66%, 66%);
+    }
+    .unsuitable {
+      top: 32%;
+      @include h.appDirValue(right, 1%, 1%);
+      transform: none !important;
+    }
+    .low {
+      top: 63%;
+      @include h.appDirValue(right, -4%, -4%);
+    }
+    .moderate {
+      top: -2%;
+      @include h.appDirValue(right, 33%, 33%);
+    }
+  }
+}

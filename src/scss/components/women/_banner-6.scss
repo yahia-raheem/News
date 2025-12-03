@@ -1,0 +1,43 @@
+section.banner-6 {
+  .lakes {
+    top: -14%;
+    @include h.appDirValue(right, 66%, 66%);
+  }
+
+  .high-sal {
+    top: -25%;
+    @include h.appDirValue(right, 14%, 14%);
+  }
+
+  .mid-sal {
+    top: 13%;
+    @include h.appDirValue(right, -28%, -28%);
+  }
+
+  .low-sal {
+    top: 47%;
+    @include h.appDirValue(right, -31%, -31%);
+  }
+
+  @media screen and (min-width: 992px) {
+    .lakes {
+      top: 9%;
+      @include h.appDirValue(right, 66%, 66%);
+    }
+
+    .high-sal {
+      top: -5%;
+      @include h.appDirValue(right, 23%, 23%);
+    }
+
+    .mid-sal {
+      top: 32%;
+      @include h.appDirValue(right, -5%, -5%);
+    }
+
+    .low-sal {
+      top: 71%;
+      @include h.appDirValue(right, 5%, 5%);
+    }
+  }
+}
