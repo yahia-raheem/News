@@ -1,22 +1,22 @@
 section.banner-6 {
   .lakes {
-    top: -14%;
-    @include h.appDirValue(right, 66%, 66%);
+    top: 1%;
+    @include h.appDirValue(right, 71%, 71%);
   }
 
   .high-sal {
-    top: -25%;
-    @include h.appDirValue(right, 14%, 14%);
+    top: -7%;
+    @include h.appDirValue(right, 25%, 25%);
   }
 
   .mid-sal {
-    top: 13%;
-    @include h.appDirValue(right, -28%, -28%);
+    top: 22%;
+    @include h.appDirValue(right, -5%, -5%);
   }
 
   .low-sal {
-    top: 47%;
-    @include h.appDirValue(right, -31%, -31%);
+    top: 46%;
+    @include h.appDirValue(right, 5%, 5%);
   }
 
   @media screen and (min-width: 992px) {

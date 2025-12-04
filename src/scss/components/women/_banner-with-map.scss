@@ -35,7 +35,9 @@ section.banner-with-map {
     img {
       position: absolute;
       pointer-events: none;
-      transform: scale(0.5);
+      
+      max-width: h.rem(120);
+      max-height: h.rem(60);
     }
   }
 
@@ -60,6 +62,9 @@ section.banner-with-map {
     .arrows-container {
       img {
         transform: none;
+
+        max-width: none;
+        max-height: none;
       }
     }
   }

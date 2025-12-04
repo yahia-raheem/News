@@ -1,20 +1,19 @@
 section.banner-7 {
   .lakes-2 {
-    top: -8%;
-    @include h.appDirValue(right, 64%, 64%);
+    top: 6%;
+    @include h.appDirValue(right, 70%, 70%);
   }
   .unsuitable {
-    top: 7%;
-    @include h.appDirValue(right, -36%, -36%);
-    transform: scale(0.37) !important;
+    top: 20%;
+    @include h.appDirValue(right, -1%, -1%);
   }
   .low {
     top: 42%;
-    @include h.appDirValue(right, -31%, -31%);
+    @include h.appDirValue(right, -1%, -1%);
   }
   .moderate {
-    top: -26%;
-    @include h.appDirValue(right, 20%, 20%);
+    top: -1%;
+    @include h.appDirValue(right, 36%, 36%);
   }
 
   @media screen and (min-width: 992px) {
